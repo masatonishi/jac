@@ -1,1 +1,68 @@
 @use "../global" as *;
+
+.l-footer {
+  padding: 40px 0 0 0;
+  color: var(--c-text-white);
+  background-color: var(--c-primary);
+
+  @include mq(md) {
+    padding: 38px 0;
+  }
+}
+
+.l-footer__inner {
+  display: grid;
+  row-gap: 40px;
+
+  @include mq(md) {
+    width: min((1240px + var(--padding-pc) * 2), 100%);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 1em;
+    row-gap: 25px;
+  }
+}
+
+.l-footer__nav {
+  @include mq(md) {
+    justify-self: end;
+  }
+}
+
+.l-footer__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 2em;
+  row-gap: 5px;
+
+  @include mq(md) {
+    column-gap: 3em;
+    justify-content: start;
+  }
+}
+
+.l-footer__nav-item a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  @include mq(md) {
+    letter-spacing: 0.1em;
+  }
+}
+
+.l-footer__copy {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 11px;
+
+  @include mq(md) {
+    order: -1;
+    font-size: 14px;
+    padding: 0;
+  }
+}
