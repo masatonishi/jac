@@ -1,0 +1,118 @@
+@use "../global" as *;
+
+.p-index-contact {
+  color: var(--c-text-white);
+  background-color: var(--c-primary);
+  text-align: center;
+  padding: 70px 0 50px;
+  position: relative;
+}
+
+.p-index-contact::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--c-primary);
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 0;
+  right: 0;
+}
+
+.p-index-contact__inner {
+  padding: 0 36px;
+
+  @include mq(lg) {
+    padding: 0 var(--padding-pc);
+  }
+}
+
+.p-index-contact__cols {
+  margin-top: 60px;
+  display: grid;
+  row-gap: 50px;
+
+  @include mq(lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.p-index-contact__col {
+  padding-bottom: 55px;
+  border-bottom: 1px solid var(--c-base);
+
+  @include mq(lg) {
+    border-bottom: none;
+  }
+}
+
+.p-index-contact__col:nth-of-type(1) {
+  @include mq(lg) {
+    padding: 5px min(140px, calc(140 / 1190 * 100vw)) 18px
+      min(92px, calc(92 / 1190 * 100vw));
+  }
+}
+
+.p-index-contact__col:nth-of-type(2) {
+  @include mq(lg) {
+    border-left: 2px solid var(--c-base);
+    padding: 5px min(50px, calc(50 / 1190 * 100vw)) 18px
+      min(100px, calc(100 / 1190 * 100vw));
+  }
+}
+
+.p-index-contact__sub-title {
+  font-family: var(--second-font);
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0;
+
+  @include mq(md) {
+    font-size: 40px;
+  }
+}
+
+.p-index-contact__texts {
+  margin-top: 12px;
+
+  @include mq(lg) {
+    margin-top: 22px;
+  }
+}
+
+.p-index-contact__text {
+  font-weight: 700;
+  line-height: 1.5;
+
+  @include mq(md) {
+    line-height: 1.75;
+  }
+}
+
+.p-index-contact__text a {
+  text-decoration: revert;
+}
+
+.p-index-contact__text + .p-index-contact__text {
+  @include mq(md) {
+    margin-top: 30px;
+  }
+}
+
+.p-index-contact__text--mt {
+  margin-top: 24px;
+}
+
+.p-index-contact__text + .p-index-contact__text--mt {
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.p-index-contact__text span {
+  @include mq(md) {
+    font-size: 14px;
+  }
+}

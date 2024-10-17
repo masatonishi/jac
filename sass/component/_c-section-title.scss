@@ -1,5 +1,11 @@
 @use "../global" as *;
 
+.c-section-title {
+  @include mq(md) {
+    width: fit-content;
+  }
+}
+
 .c-section-title span {
   display: inline-block;
   font-family: var(--second-font);
@@ -31,4 +37,8 @@
 .c-section-title--reverse span::before {
   right: auto;
   left: -0.05em;
+}
+
+.c-section-title--white span {
+  color: var(--c-text-white);
 }
