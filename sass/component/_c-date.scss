@@ -1,0 +1,9 @@
+@use "../global" as *;
+
+.c-date {
+  font-size: 12px;
+
+  @include mq(md) {
+    font-size: 14px;
+  }
+}

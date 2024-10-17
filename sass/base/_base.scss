@@ -1,0 +1,9 @@
+@use "../global" as *;
+
+body {
+  font-family: var(--base-font);
+  font-size: 16px;
+  color: var(--c-text);
+  background-color: var(--c-base);
+  letter-spacing: 0.1em;
+}

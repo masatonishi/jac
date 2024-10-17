@@ -1,0 +1,15 @@
+@use "../global" as *;
+
+.c-section-sub-title {
+  font-family: var(--second-font);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--c-primary);
+  letter-spacing: 0;
+
+  @include mq(md) {
+    font-size: 40px;
+  }
+}

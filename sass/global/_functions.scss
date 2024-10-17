@@ -1,0 +1,23 @@
+@use "sass:math";
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+  @return $number;
+}
+
+@function vw($window_width, $size) {
+  @return math.div($size, $window_width) * 100vw;
+}
+
+@function rem($pixels) {
+  @return math.div($pixels, 16) * 1rem;
+}
+
+// 最大値（max）と最小値（min）を定義し、$maxvp〜$minvpまでを可変値にする
+@function mm($maxfz: 16, $minfz: 16, $maxvp: 1100, $minvp: 767) {
+  $px: math.div($minvp, 100);
+  $slope: math.div(($maxfz - $minfz), (($maxvp - $minvp) * 0.01));
+  @return clamp(#{$minfz}px, (#{$minfz}px + (1vw - #{$px}px) * #{$slope}), #{$maxfz}px);
+}

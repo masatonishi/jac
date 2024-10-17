@@ -1,0 +1,98 @@
+@use "../global" as *;
+
+.c-button-arrow {
+  display: block;
+  border: 1px solid currentColor;
+  color: var(--c-primary);
+  border-radius: var(--rounded-full);
+  text-align: center;
+  padding: 0.46875em 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+@media (any-hover: hover) {
+  .c-button-arrow:hover {
+    opacity: 1;
+    color: var(--c-text-white);
+    background-color: var(--c-primary);
+  }
+
+  .c-button-arrow:hover span::before {
+    transform: translate(3px, -50%);
+  }
+
+  .c-button-arrow--reverse:hover span::before {
+    transform: translate(-3px, -50%) scale(-1, 1);
+  }
+}
+
+.c-button-arrow span {
+  --_x: 50px;
+  display: inline-block;
+  font-family: var(--second-font);
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-right: var(--_x);
+  position: relative;
+}
+
+.c-button-arrow span::before {
+  content: "";
+  width: 29px;
+  aspect-ratio: 29 / 6;
+  background-color: currentColor;
+  mask-image: url(/img/common/icon_arrow_long.svg);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 0;
+  transform: translate(0, -50%);
+  transition: transform 0.3s;
+}
+
+// c-button-arrow--reverse
+.c-button-arrow--reverse span {
+  padding-right: 0;
+  padding-left: var(--_x);
+}
+
+.c-button-arrow--reverse span::before {
+  right: auto;
+  left: 0;
+  transform: translate(0, -50%) scale(-1, 1);
+}
+
+// c-button-arrow--text-right
+.c-button-arrow--text-right span {
+  transform: translateX(10px);
+}
+
+// c-button-arrow--text-left
+.c-button-arrow--text-left span {
+  transform: translateX(-10px);
+}
+
+// c-button-arrow--small
+.c-button-arrow--small {
+  padding: 0.1563em 10px;
+}
+
+.c-button-arrow--small span {
+  --_x: 36px;
+  font-size: 16px;
+  padding-right: var(--_x);
+}
+
+.c-button-arrow--small span::before {
+  width: 19px;
+  aspect-ratio: 19 / 7;
+  mask-image: url(/img/common/icon_arrow.svg);
+}
+
+.c-button-arrow--small.c-button-arrow--reverse span {
+  padding-right: 0;
+  padding-left: var(--_x);
+}

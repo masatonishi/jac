@@ -1,0 +1,34 @@
+@use "../global" as *;
+
+.c-section-title span {
+  display: inline-block;
+  font-family: var(--second-font);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--c-primary);
+  position: relative;
+
+  @include mq(md) {
+    font-size: 100px;
+  }
+}
+
+.c-section-title span::before {
+  content: "";
+  width: 100vw;
+  height: 2px;
+  background-color: currentColor;
+  position: absolute;
+  bottom: 0.375em;
+  right: -0.05em;
+}
+
+// c-section-title--reverse
+.c-section-title--reverse span::before {
+  right: auto;
+  left: -0.05em;
+}

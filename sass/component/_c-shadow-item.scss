@@ -1,0 +1,23 @@
+@use "../global" as *;
+
+.c-shadow-item {
+  --_position: 6px;
+  margin: 0 var(--_position) var(--_position) 0;
+  position: relative;
+
+  @include mq(md) {
+    --_position: 10px;
+  }
+}
+
+.c-shadow-item::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--c-primary);
+  position: absolute;
+  top: var(--_position);
+  left: var(--_position);
+  z-index: -1;
+  border-radius: inherit;
+}

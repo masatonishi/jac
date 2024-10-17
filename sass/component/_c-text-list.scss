@@ -1,0 +1,18 @@
+@use "../global" as *;
+
+.c-text-list {
+  position: relative;
+  padding-left: 1em;
+}
+
+.c-text-list::before {
+  --_size: 4px;
+  content: "";
+  width: var(--_size);
+  aspect-ratio: 1;
+  background-color: currentColor;
+  border-radius: var(--rounded-full);
+  position: absolute;
+  top: calc((1lh - var(--_size)) / 2);
+  left: 0;
+}

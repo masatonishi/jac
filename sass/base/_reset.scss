@@ -1,0 +1,98 @@
+@use "../global" as g;
+
+html {
+  // スマートフォン横向き時のテキストの拡大を防ぐ
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:where(body, h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd) {
+  margin: 0;
+}
+
+:where(ul, ol) {
+  padding: 0;
+  list-style: "";
+}
+
+:where(img) {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+:where(a) {
+  text-decoration: none;
+  color: inherit;
+}
+
+:where(button) {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+  // ダブルタップ時のズームなどの標準外の追加的なジェスチャーを無効にする
+  touch-action: manipulation;
+}
+
+:where([type="text"], [type="email"], [type="tel"], select, textarea) {
+  appearance: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  background-color: var(--c-base);
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 0;
+}
+
+:where(textarea) {
+  resize: none;
+  field-sizing: content;
+}
+
+:where(
+    :any-link,
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"],
+    label[for],
+    select,
+    summary,
+    [role="tab"],
+    [role="button"]
+  ) {
+  cursor: pointer;
+}
+
+:where(a) {
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  :where(a):hover {
+    opacity: 0.7;
+  }
+}
+
+// キーボード操作時のフォーカスリングを維持しつつクリックやタップ時のフォーカスリングを抑える
+:focus:not(:focus-visible) {
+  outline: none;
+}

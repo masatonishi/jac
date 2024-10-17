@@ -1,0 +1,76 @@
+@use "./functions" as f;
+
+// インナー幅・余白設定
+:root {
+  --inner: 1140px;
+  --inner-s: 800px;
+  --sp-max-width: 540px;
+  --padding-pc: 25px;
+  --padding-sp: 40px;
+}
+
+// font-family
+:root {
+  --base-font: "Zen Kaku Gothic New", sans-serif;
+  --second-font: "Josefin Sans", sans-serif;
+}
+
+// color
+:root {
+  --c-base: #fff;
+  --c-primary: #00236d;
+  --c-gray: #f5f5f5;
+  --c-text: #1a1a1a;
+  --c-text-white: #fff;
+}
+
+// z-index
+:root {
+  --z-index-modal: 50;
+  --z-index-modal-open: 100;
+  --z-index-overlay: 40;
+  --z-index-sp-menu: 30;
+  --z-index-header: 10;
+  --z-index-page-top: 5;
+  --z-index-following-banner: 5;
+}
+
+// clip-path
+:root {
+  --clip-triangle-top: polygon(50% 0, 100% 100%, 0 100%);
+  --clip-triangle-bottom: polygon(0 0, 100% 0, 50% 100%);
+  --clip-triangle-right: polygon(0 0, 100% 50%, 0 100%);
+  --clip-triangle-left: polygon(0 50%, 100% 0, 100% 100%);
+  --clip-triangle-lower-left: polygon(0 0, 100% 100%, 0 100%);
+  --clip-triangle-upper-left: polygon(0 0, 100% 0, 0 100%);
+  --clip-triangle-lower-right: polygon(100% 0, 100% 100%, 0 100%);
+  --clip-triangle-upper-right: polygon(0 0, 100% 0, 100% 100%);
+}
+
+// border-radius
+:root {
+  --rounded-xxs: 2px;
+  --rounded-xs: 4px;
+  --rounded-sm: 8px;
+  --rounded-md: 12px;
+  --rounded-lg: 15px;
+  --rounded-xl: 20px;
+  --rounded-full: 99rem;
+}
+
+// breakpoint
+$breakpoints: (
+  sm: 600,
+  md: 768,
+  lg: 1024,
+  xl: 1310,
+  xxl: 1440,
+);
+
+// mediaquery
+$mediaquerys: (
+  sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
+  md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
+  lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
+  xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+);

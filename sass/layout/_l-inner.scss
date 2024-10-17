@@ -1,0 +1,18 @@
+@use "../global" as *;
+
+.l-inner {
+  width: min(var(--sp-max-width), 100%);
+  padding: 0 var(--padding-sp);
+  margin: 0 auto;
+
+  @include mq(md) {
+    width: min((var(--inner) + var(--padding-pc) * 2), 100%);
+    padding: 0 var(--padding-pc);
+  }
+}
+
+.l-inner--s {
+  @include mq(md) {
+    width: min((var(--inner-s) + var(--padding-pc) * 2), 100%);
+  }
+}
