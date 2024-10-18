@@ -1,9 +1,7 @@
 @use "../global" as *;
 
 .c-section-title {
-  @include mq(md) {
-    width: fit-content;
-  }
+  width: fit-content;
 }
 
 .c-section-title span {

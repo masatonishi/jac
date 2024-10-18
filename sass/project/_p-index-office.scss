@@ -1,0 +1,56 @@
+@use "../global" as *;
+
+.p-index-office {
+  margin-top: 70px;
+
+  @include mq(md) {
+    margin-top: 90px;
+  }
+}
+
+.p-index-office__lead {
+  margin-top: 34px;
+  line-height: 1.75;
+
+  @include mq(md) {
+    margin-top: 50px;
+    font-size: 18px;
+    max-width: 605px;
+  }
+}
+
+.p-index-office__list {
+  margin-top: 46px;
+  border-top: 1px solid var(--c-primary);
+
+  @include mq(md) {
+    margin-top: 74px;
+    width: min(708px, 100%);
+  }
+}
+
+.p-index-office__item {
+  border-bottom: 1px solid var(--c-primary);
+  display: grid;
+  row-gap: 5px;
+  padding: 16px 0;
+
+  @include mq(md) {
+    grid-template-columns: 250fr 458fr;
+    column-gap: 1em;
+    padding: 32px 0;
+  }
+}
+
+.p-index-office__label {
+  font-weight: 700;
+}
+
+.p-index-office__text {
+  letter-spacing: 0.07em;
+  line-height: 1.5313;
+
+  @include mq(md) {
+    line-height: 1.75;
+  }
+}
