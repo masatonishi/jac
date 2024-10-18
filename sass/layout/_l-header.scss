@@ -1,1 +1,62 @@
 @use "../global" as *;
+
+.l-header {
+  background-image: url(/img/common/bg_header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-index-header);
+
+  @include mq(md) {
+    background-image: url(/img/common/bg_header_pc.jpg);
+    height: 80px;
+  }
+}
+
+.l-header__inner {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px 0 20px;
+
+  @include mq(md) {
+    padding: 0 30px 0 min(100px, calc(100 / 1190 * 100vw));
+  }
+}
+
+.l-header__logo {
+  width: 178px;
+
+  @include mq(md) {
+    width: 286px;
+  }
+}
+
+.l-header__control {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  @include mq(md) {
+    position: absolute;
+    top: 20px;
+    right: 32px;
+    column-gap: 35px;
+  }
+}
+
+// 追従ヘッダー
+.l-header[data-following-header] {
+  transform: translateY(calc(-100% - 1px));
+  transition: transform 0.3s;
+}
+
+.l-header[data-following-header].is-active {
+  transform: translateY(0);
+}

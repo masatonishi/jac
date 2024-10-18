@@ -1,0 +1,44 @@
+@use "../global" as *;
+
+// c-lang-switch
+.c-lang-switch {
+  display: flex;
+}
+
+.c-lang-switch__link {
+  display: inline-block;
+  font-family: var(--second-font);
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  padding: 10px;
+}
+
+.c-lang-switch__link.is-active {
+  color: var(--c-text-white);
+}
+
+.c-lang-switch__link:nth-of-type(2) {
+  position: relative;
+}
+
+.c-lang-switch__link:nth-of-type(2)::before {
+  content: "";
+  width: 1px;
+  height: 1em;
+  background-color: var(--c-base);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+// c-lang-switch--primary
+.c-lang-switch--primary .c-lang-switch__link.is-active {
+  color: var(--c-primary);
+}
+
+.c-lang-switch--primary .c-lang-switch__link:nth-of-type(2)::before {
+  background-color: var(--c-primary);
+}
