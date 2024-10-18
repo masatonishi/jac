@@ -1,10 +1,10 @@
 @use "../global" as *;
 
 .p-index-mission {
-  margin-top: 72px;
+  margin-top: 160px;
 
   @include mq(md) {
-    margin-top: -15px;
+    margin-top: 105px;
   }
 }
 

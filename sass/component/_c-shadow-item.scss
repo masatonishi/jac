@@ -1,7 +1,8 @@
 @use "../global" as *;
 
 .c-shadow-item {
-  --_position: 6px;
+  --_rounded: var(--rounded-xxl);
+  --_position: 10px;
   margin: 0 var(--_position) var(--_position) 0;
   position: relative;
 
@@ -19,5 +20,9 @@
   top: var(--_position);
   left: var(--_position);
   z-index: -1;
-  border-radius: inherit;
+  border-radius: var(--_rounded) 0 var(--_rounded) 0;
+}
+
+.c-shadow-item img {
+  border-radius: var(--_rounded) 0 var(--_rounded) 0;
 }
