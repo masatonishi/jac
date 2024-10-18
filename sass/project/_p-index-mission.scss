@@ -1,0 +1,121 @@
+@use "../global" as *;
+
+.p-index-mission {
+  margin-top: 72px;
+
+  @include mq(md) {
+    margin-top: -15px;
+  }
+}
+
+.p-index-mission__lead {
+  margin-top: 60px;
+  line-height: 1.75;
+
+  @include mq(md) {
+    margin: 40px 0 0 auto;
+    font-size: 18px;
+    max-width: 620px;
+  }
+}
+
+.p-index-mission__list {
+  margin-top: 42px;
+
+  @include mq(md) {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.p-index-mission__ltem {
+  display: grid;
+  padding: 55px 0;
+  border-top: 1px solid var(--c-primary);
+
+  @include mq(md) {
+    border-top: none;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    padding: 0 min(35px, calc(35 / 1190 * 100vw)) 25px;
+  }
+}
+
+.p-index-mission__ltem:first-of-type {
+  @include mq(md) {
+    border-right: 1px solid var(--c-primary);
+  }
+}
+
+.p-index-mission__ltem:last-of-type {
+  @include mq(md) {
+    border-left: 1px solid var(--c-primary);
+  }
+}
+
+.p-index-mission__number {
+  font-family: var(--second-font);
+  text-align: center;
+  color: var(--c-primary);
+}
+
+.p-index-mission__number span {
+  display: block;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @include mq(md) {
+    font-size: 30px;
+  }
+}
+
+.p-index-mission__number em {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: 100px;
+  }
+}
+
+.p-index-mission__title {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.75;
+  color: var(--c-primary);
+
+  @include mq(md) {
+    margin-top: 15px;
+    line-height: 1.5;
+    align-self: center;
+  }
+}
+
+.p-index-mission__texts {
+  margin-top: 35px;
+  order: 1;
+  line-height: 1.75;
+  display: grid;
+  row-gap: 1em;
+
+  @include mq(md) {
+    margin-top: 40px;
+  }
+}
+
+.p-index-mission__icon {
+  margin: 25px auto 0;
+  width: 76px;
+
+  @include mq(md) {
+    margin: 30px auto 0;
+  }
+}
