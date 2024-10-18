@@ -276,6 +276,7 @@ body {
   border: 1px solid var(--c-primary);
   border-radius: var(--rounded-full);
   position: relative;
+  transition: color 0.3s, background-color 0.3s;
 }
 @media screen and (min-width: 768px) {
   .c-circle-arrow {
@@ -337,7 +338,7 @@ body {
   color: var(--c-primary);
   border-radius: var(--rounded-full);
   text-align: center;
-  padding: 0.46875em 10px;
+  padding: 6px 15px 4px 10px;
   transition: color 0.3s, background-color 0.3s;
 }
 
@@ -355,12 +356,13 @@ body {
   }
 }
 .c-button-arrow span {
-  --_x: 50px;
+  --_x: 40px;
   display: inline-block;
   font-family: var(--second-font);
   font-style: italic;
   font-size: 18px;
   font-weight: 300;
+  letter-spacing: 0;
   text-transform: uppercase;
   padding-right: var(--_x);
   position: relative;
@@ -746,6 +748,163 @@ body {
 @media screen and (min-width: 768px) {
   .p-index-office__text {
     line-height: 1.75;
+  }
+}
+
+.p-index-news {
+  background-color: rgba(0, 35, 109, 0.2);
+  padding: 120px 0 80px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-index-news {
+    padding: 190px 0 100px;
+  }
+}
+
+.p-index-news::before {
+  content: "";
+  width: 100%;
+  height: 85px;
+  background-color: var(--c-base);
+  -webkit-clip-path: var(--clip-triangle-upper-right);
+          clip-path: var(--clip-triangle-upper-right);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 768px) {
+  .p-index-news::before {
+    height: 200px;
+  }
+}
+
+.p-index-news__inner {
+  padding: 0 15px;
+  display: grid;
+  grid-template: "title" auto "." 40px "list" auto "." 50px "button" auto/1fr;
+}
+@media screen and (min-width: 1024px) {
+  .p-index-news__inner {
+    width: min(1240px + var(--padding-pc) * 2, 100%);
+    padding: 0 var(--padding-pc) 0 75px;
+    grid-template: "title . ." 80px "title . button" auto ". . ." 40px ". . list" auto/auto 52px 1fr;
+  }
+}
+
+.p-index-news__title {
+  grid-area: title;
+  padding-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .p-index-news__title {
+    padding-left: 0;
+  }
+}
+
+.p-index-news__list {
+  grid-area: list;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px 20px;
+  display: grid;
+  row-gap: 18px;
+}
+@media screen and (min-width: 768px) {
+  .p-index-news__list {
+    padding: 58px 60px;
+    row-gap: 20px;
+  }
+}
+
+.p-index-news__button {
+  grid-area: button;
+  justify-self: center;
+  width: min(190px, 100%);
+}
+@media screen and (min-width: 768px) {
+  .p-index-news__button {
+    justify-self: end;
+  }
+}
+
+.c-news-item {
+  border-bottom: 1px solid var(--c-base);
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .c-news-item {
+    padding-bottom: 20px;
+  }
+}
+
+.c-news-item__link {
+  display: grid;
+  grid-template: "date . tag . ." "title title title . icon"/auto 10px 1fr 10px auto;
+  row-gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .c-news-item__link {
+    grid-template: "date . tag . title . icon"/auto 5px auto 20px 1fr 20px auto;
+    align-items: center;
+  }
+}
+
+@media (any-hover: hover) {
+  .c-news-item__link:hover {
+    opacity: 1;
+  }
+  .c-news-item__link:hover .c-news-item__title span {
+    background-size: 100% 1px;
+  }
+  .c-news-item__link:hover .c-news-item__arrow span {
+    color: var(--c-base);
+    background-color: var(--c-primary);
+  }
+}
+.c-news-item__date {
+  grid-area: date;
+}
+
+.c-news-item__tag {
+  grid-area: tag;
+  justify-self: start;
+}
+
+.c-news-item__title {
+  grid-area: title;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .c-news-item__title {
+    -webkit-line-clamp: 2;
+  }
+}
+
+.c-news-item__title span {
+  font-weight: 700;
+  background-image: linear-gradient(90deg, currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0 1px;
+  transition: background-size 0.6s;
+}
+@media screen and (min-width: 768px) {
+  .c-news-item__title span {
+    line-height: 1.75;
+  }
+}
+
+.c-news-item__arrow {
+  grid-area: icon;
+  align-self: end;
+}
+@media screen and (min-width: 768px) {
+  .c-news-item__arrow {
+    align-self: center;
   }
 }
 

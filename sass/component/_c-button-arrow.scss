@@ -6,7 +6,7 @@
   color: var(--c-primary);
   border-radius: var(--rounded-full);
   text-align: center;
-  padding: 0.46875em 10px;
+  padding: 6px 15px 4px 10px;
   transition: color 0.3s, background-color 0.3s;
 }
 
@@ -27,12 +27,13 @@
 }
 
 .c-button-arrow span {
-  --_x: 50px;
+  --_x: 40px;
   display: inline-block;
   font-family: var(--second-font);
   font-style: italic;
   font-size: 18px;
   font-weight: 300;
+  letter-spacing: 0;
   text-transform: uppercase;
   padding-right: var(--_x);
   position: relative;

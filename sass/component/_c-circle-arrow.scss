@@ -7,6 +7,7 @@
   border: 1px solid var(--c-primary);
   border-radius: var(--rounded-full);
   position: relative;
+  transition: color 0.3s, background-color 0.3s;
 
   @include mq(md) {
     width: 30px;
