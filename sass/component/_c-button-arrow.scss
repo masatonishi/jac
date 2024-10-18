@@ -15,6 +15,7 @@
     opacity: 1;
     color: var(--c-text-white);
     background-color: var(--c-primary);
+    border-color: var(--c-primary);
   }
 
   .c-button-arrow:hover span::before {

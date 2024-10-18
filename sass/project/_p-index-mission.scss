@@ -50,6 +50,8 @@
 }
 
 .p-index-mission__ltem:last-of-type {
+  padding-bottom: 0;
+
   @include mq(md) {
     border-left: 1px solid var(--c-primary);
   }

@@ -100,6 +100,7 @@
     100% 100%,
     0 calc(100% - calc(79 / 390 * 100vw))
   );
+  mix-blend-mode: multiply;
 }
 
 .p-index-message__bg img {

@@ -1,5 +1,13 @@
 @use "../global" as *;
 
+.p-index-about {
+  margin-top: 70px;
+
+  @include mq(md) {
+    margin-top: 85px;
+  }
+}
+
 .p-index-about__body {
   margin-top: 25px;
 
