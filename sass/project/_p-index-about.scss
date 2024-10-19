@@ -1,10 +1,11 @@
 @use "../global" as *;
 
 .p-index-about {
-  margin-top: 70px;
+  padding-top: 70px;
+  background-color: var(--c-base);
 
   @include mq(md) {
-    margin-top: 85px;
+    padding-top: 85px;
   }
 }
 

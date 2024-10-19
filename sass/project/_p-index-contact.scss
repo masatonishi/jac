@@ -1,16 +1,11 @@
 @use "../global" as *;
 
 .p-index-contact {
-  margin-top: 80px;
   color: var(--c-text-white);
   background-color: var(--c-primary);
   text-align: center;
   padding: 70px 0 50px;
   position: relative;
-
-  @include mq(md) {
-    margin-top: 100px;
-  }
 }
 
 .p-index-contact::before {

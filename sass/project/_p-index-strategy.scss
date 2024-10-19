@@ -1,16 +1,19 @@
 @use "../global" as *;
 
 .p-index-strategy {
-  margin-top: 50px;
+  // margin-top: 50px;
   background-image: url(/img/index/bg_strategy.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 70px 0 52px;
+  // padding: 70px 0 52px;
+  padding: 120px 0 52px;
+  background-color: var(--c-base);
 
   @include mq(md) {
-    margin-top: 98px;
+    // margin-top: 98px;
     background-image: url(/img/index/bg_strategy_pc.png);
-    padding: 90px 0 125px;
+    // padding: 90px 0 125px;
+    padding: 190px 0 125px;
   }
 }
 

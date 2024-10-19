@@ -1,6 +1,10 @@
 @use "../global" as *;
 
 .p-index-approach {
+  background-color: var(--c-base);
+}
+
+.p-index-approach__bg {
   background-color: var(--c-primary);
   color: var(--c-text-white);
   padding: 70px 0 130px;

@@ -3,6 +3,7 @@
 .p-index-message {
   padding: 150px 0 100px;
   position: relative;
+  background-color: var(--c-base);
 
   @include mq(md) {
     padding: 185px 0 365px;
@@ -62,7 +63,7 @@
 }
 
 .p-index-message__sign {
-  margin-top: 30px;
+  margin-top: 35px;
   text-align: right;
   line-height: 1.75;
 
