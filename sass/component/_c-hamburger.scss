@@ -59,3 +59,22 @@
 .c-hamburger--primary .c-hamburger__line::after {
   background-color: var(--c-primary);
 }
+
+// アニメーション
+.c-hamburger[aria-expanded="true"] .c-hamburger__line {
+  background-color: transparent;
+}
+
+.c-hamburger[aria-expanded="true"] .c-hamburger__line::before,
+.c-hamburger[aria-expanded="true"] .c-hamburger__line::after {
+  width: 30px;
+  top: 0;
+}
+
+.c-hamburger[aria-expanded="true"] .c-hamburger__line::before {
+  transform: rotate(40deg);
+}
+
+.c-hamburger[aria-expanded="true"] .c-hamburger__line::after {
+  transform: rotate(-40deg);
+}
