@@ -54,7 +54,7 @@
   bottom: -20px;
 
   @include mq(md) {
-    bottom: -32px;
+    bottom: min(-32px, calc(-32 / 1150 * 100vw));
     padding-left: 10px;
   }
 }
@@ -65,7 +65,7 @@
   padding: 0 0 15px 20px;
 
   @include mq(md) {
-    font-size: 24px;
+    font-size: max(24px, calc(24 / 1440 * 100vw));
     padding: 0 0 min(78px, calc(78 / 1190 * 100vw))
       min(90px, calc(90 / 1190 * 100vw));
   }
@@ -78,7 +78,7 @@
   line-height: 1;
 
   @include mq(md) {
-    font-size: 125px;
+    font-size: max(125px, calc(125 / 1440 * 100vw));
   }
 }
 
