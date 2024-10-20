@@ -26,3 +26,24 @@
   object-fit: cover;
   aspect-ratio: 240 / 300;
 }
+
+// c-card-member--small
+.c-card-member--small .c-card-member__role {
+  margin-top: 12px;
+  font-size: 14px;
+
+  @include mq(md) {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
+
+.c-card-member--small .c-card-member__name {
+  margin-top: 0;
+  font-size: 20px;
+
+  @include mq(md) {
+    margin-top: 5px;
+    font-size: 22px;
+  }
+}

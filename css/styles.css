@@ -673,6 +673,28 @@ body {
   aspect-ratio: 240/300;
 }
 
+.c-card-member--small .c-card-member__role {
+  margin-top: 12px;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .c-card-member--small .c-card-member__role {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
+
+.c-card-member--small .c-card-member__name {
+  margin-top: 0;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .c-card-member--small .c-card-member__name {
+    margin-top: 5px;
+    font-size: 22px;
+  }
+}
+
 .l-inner {
   width: min(var(--sp-max-width), 100%);
   padding: 0 var(--padding-sp);
@@ -834,6 +856,17 @@ body {
 
 .l-wrapper {
   overflow-x: clip;
+}
+
+.l-subpage {
+  margin-top: 60px;
+  padding-bottom: 100px;
+}
+@media screen and (min-width: 768px) {
+  .l-subpage {
+    margin-top: 80px;
+    padding-bottom: 150px;
+  }
 }
 
 .p-global-menu {
@@ -2186,6 +2219,75 @@ body.is-drawerActive .p-global-menu__overlay {
   .p-index-team__button {
     margin: 0;
     grid-area: button;
+  }
+}
+
+.p-sub-page-header {
+  padding: 70px 0;
+}
+@media screen and (min-width: 768px) {
+  .p-sub-page-header {
+    padding: 85px 0 75px;
+  }
+}
+
+.l-subpage__inner {
+  display: grid;
+  row-gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .l-subpage__inner {
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+  }
+}
+@media screen and (min-width: 1310px) {
+  .l-subpage__inner {
+    -moz-column-gap: 215px;
+         column-gap: 215px;
+  }
+}
+
+.p-sub-page-header__text {
+  line-height: 1.75;
+}
+@media screen and (min-width: 768px) {
+  .p-sub-page-header__text {
+    font-size: 18px;
+  }
+}
+
+.p-archive-team__inner {
+  padding: 0 37px;
+}
+@media screen and (min-width: 768px) {
+  .p-archive-team__inner {
+    padding: 0 var(--padding-pc);
+  }
+}
+
+.p-archive-team__block + .p-archive-team__block {
+  margin-top: 70px;
+}
+@media screen and (min-width: 768px) {
+  .p-archive-team__block + .p-archive-team__block {
+    margin-top: 100px;
+  }
+}
+
+.p-archive-team__list {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 13px;
+}
+@media screen and (min-width: 768px) {
+  .p-archive-team__list {
+    margin-top: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(min(225px, 100%), 1fr));
+    gap: 30px 48px;
   }
 }
 

@@ -1,0 +1,32 @@
+@use "../global" as *;
+
+.p-sub-page-header {
+  padding: 70px 0;
+
+  @include mq(md) {
+    padding: 85px 0 75px;
+  }
+}
+
+.l-subpage__inner {
+  display: grid;
+  row-gap: 30px;
+
+  @include mq(md) {
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    column-gap: 100px;
+  }
+
+  @include mq(xl) {
+    column-gap: 215px;
+  }
+}
+
+.p-sub-page-header__text {
+  line-height: 1.75;
+
+  @include mq(md) {
+    font-size: 18px;
+  }
+}

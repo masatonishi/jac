@@ -1,0 +1,33 @@
+@use "../global" as *;
+
+.p-archive-team {
+}
+
+.p-archive-team__inner {
+  padding: 0 37px;
+
+  @include mq(md) {
+    padding: 0 var(--padding-pc);
+  }
+}
+
+.p-archive-team__block + .p-archive-team__block {
+  margin-top: 70px;
+
+  @include mq(md) {
+    margin-top: 100px;
+  }
+}
+
+.p-archive-team__list {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 13px;
+
+  @include mq(md) {
+    margin-top: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(min(225px, 100%), 1fr));
+    gap: 30px 48px;
+  }
+}
