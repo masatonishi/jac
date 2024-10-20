@@ -1,0 +1,7 @@
+@use "../global" as *;
+
+.c-tab__content[aria-hidden="true"] {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}

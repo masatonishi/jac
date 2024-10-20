@@ -30,9 +30,10 @@
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
     rel="stylesheet">
   <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/css/styles.css">
   <!-- JavaScript -->
-  <script type="module" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script type="module" src="/js/script.js"></script>
   <script type="module" src="/js/index.js"></script>
 </head>
@@ -419,7 +420,454 @@
         </div>
       </section>
       <!-- /p-index-approach -->
-      <section class="p-index-team"></section>
+      <!-- p-index-team -->
+      <section class="p-index-team">
+        <div class="l-inner">
+          <h2 class="c-section-title c-section-title--reverse"><span>team</span></h2>
+          <div class="p-index-team__container c-tab">
+            <ul class="p-index-team__labels" role="tablist">
+              <li data-tab="item" role="presentation">
+                <button role="tab" class="p-index-team__tab" aria-selected="true" aria-controls="tab-1"
+                  data-tab="button">Investment Team</button>
+              </li>
+              <li data-tab="item" role="presentation">
+                <button role="tab" class="p-index-team__tab" aria-selected="false" aria-controls="tab-2"
+                  data-tab="button">Special Value Creation Team</button>
+              </li>
+              <li data-tab="item" role="presentation">
+                <button role="tab" class="p-index-team__tab" aria-selected="false" aria-controls="tab-3"
+                  data-tab="button">CEO Office</button>
+              </li>
+              <li data-tab="item" role="presentation">
+                <button role="tab" class="p-index-team__tab" aria-selected="false" aria-controls="tab-4"
+                  data-tab="button">Corporate Team</button>
+              </li>
+              <li data-tab="item" role="presentation">
+                <button role="tab" class="p-index-team__tab" aria-selected="false" aria-controls="tab-5"
+                  data-tab="button">Board Members</button>
+              </li>
+              <li data-tab="item" role="presentation">
+                <button role="tab" class="p-index-team__tab" aria-selected="false" aria-controls="tab-6"
+                  data-tab="button">Advisors</button>
+              </li>
+            </ul>
+            <div class="p-index-team__body">
+              <!-- Investment Teamここから -->
+              <div id="tab-1" class="c-tab__content" aria-hidden="false">
+                <div class="p-index-team__carousel" data-carousel="member">
+                  <div class="swiper">
+                    <ul class="swiper-wrapper">
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">代表取締役社長 & CEO</p>
+                          <p class="c-card-member__name">大塚 博行</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="/img/index/pic_otsuka.jpg" alt="大塚 博行" width="240" height="300" decoding="async"
+                              loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">取締役会長</p>
+                          <p class="c-card-member__name">永松 昌一</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="永松 昌一" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="p-index-team__carousel-prev swiper-button-prev">
+                    <img src="/img/common/icon_carousel-button-prev.svg" alt="" width="32" height="84" decoding="async"
+                      loading="lazy">
+                  </div>
+                  <div class="p-index-team__carousel-next swiper-button-next">
+                    <img src="/img/common/icon_carousel-button-next.svg" alt="" width="32" height="84" decoding="async"
+                      loading="lazy">
+                  </div>
+                </div>
+              </div>
+              <!-- Investment Teamここまで -->
+              <!-- Special Value Creation Teamここから -->
+              <div id="tab-2" class="c-tab__content" aria-hidden="true">
+                <div class="p-index-team__carousel" data-carousel="member">
+                  <div class="swiper">
+                    <ul class="swiper-wrapper">
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="p-index-team__carousel-prev swiper-button-prev">
+                    <img src="/img/common/icon_carousel-button-prev.svg" alt="" width="32" height="84" decoding="async"
+                      loading="lazy">
+                  </div>
+                  <div class="p-index-team__carousel-next swiper-button-next">
+                    <img src="/img/common/icon_carousel-button-next.svg" alt="" width="32" height="84" decoding="async"
+                      loading="lazy">
+                  </div>
+                </div>
+              </div>
+              <!-- Special Value Creation Teamここまで -->
+              <!-- CEO Officeここから -->
+              <div id="tab-3" class="c-tab__content" aria-hidden="true">
+                <div class="p-index-team__carousel" data-carousel="member">
+                  <div class="swiper">
+                    <ul class="swiper-wrapper">
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="p-index-team__carousel-prev swiper-button-prev">
+                    <img src="/img/common/icon_carousel-button-prev.svg" alt="" width="32" height="84" decoding="async"
+                      loading="lazy">
+                  </div>
+                  <div class="p-index-team__carousel-next swiper-button-next">
+                    <img src="/img/common/icon_carousel-button-next.svg" alt="" width="32" height="84" decoding="async"
+                      loading="lazy">
+                  </div>
+                </div>
+              </div>
+              <!-- CEO Officeここまで -->
+              <!-- Corporate Teamここから -->
+              <div id="tab-4" class="c-tab__content" aria-hidden="true">
+                <div class="p-index-team__carousel" data-carousel="member">
+                  <div class="swiper">
+                    <ul class="swiper-wrapper">
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="p-index-team__carousel-prev swiper-button-prev">
+                    <img src="/img/common/icon_carousel-button-prev.svg" alt="" width="32" height="84" decoding="async"
+                      loading="lazy">
+                  </div>
+                  <div class="p-index-team__carousel-next swiper-button-next">
+                    <img src="/img/common/icon_carousel-button-next.svg" alt="" width="32" height="84" decoding="async"
+                      loading="lazy">
+                  </div>
+                </div>
+              </div>
+              <!-- Corporate Teamここまで -->
+              <!-- Board Membersここから -->
+              <div id="tab-5" class="c-tab__content" aria-hidden="true">
+                <div class="p-index-team__carousel" data-carousel="member">
+                  <div class="swiper">
+                    <ul class="swiper-wrapper">
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="p-index-team__carousel-prev swiper-button-prev">
+                    <img src="/img/common/icon_carousel-button-prev.svg" alt="" width="32" height="84" decoding="async"
+                      loading="lazy">
+                  </div>
+                  <div class="p-index-team__carousel-next swiper-button-next">
+                    <img src="/img/common/icon_carousel-button-next.svg" alt="" width="32" height="84" decoding="async"
+                      loading="lazy">
+                  </div>
+                </div>
+              </div>
+              <!-- Board Membersここまで -->
+              <!-- Advisorsここから -->
+              <div id="tab-6" class="c-tab__content" aria-hidden="true">
+                <div class="p-index-team__carousel" data-carousel="member">
+                  <div class="swiper">
+                    <ul class="swiper-wrapper">
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                      <li class="p-index-team__carousel-slide swiper-slide">
+                        <a href="/" class="c-card-member">
+                          <p class="c-card-member__role">役職</p>
+                          <p class="c-card-member__name">氏名</p>
+                          <figure class="c-card-member__img c-shadow-item">
+                            <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                              decoding="async" loading="lazy">
+                          </figure>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="p-index-team__carousel-prev swiper-button-prev">
+                    <img src="/img/common/icon_carousel-button-prev.svg" alt="" width="32" height="84" decoding="async"
+                      loading="lazy">
+                  </div>
+                  <div class="p-index-team__carousel-next swiper-button-next">
+                    <img src="/img/common/icon_carousel-button-next.svg" alt="" width="32" height="84" decoding="async"
+                      loading="lazy">
+                  </div>
+                </div>
+              </div>
+              <!-- Advisorsここまで -->
+            </div>
+            <div class="p-index-team__button">
+              <a href="/" class="c-button-arrow c-button-arrow--text-right"><span>read more</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /p-index-team -->
       <!-- p-index-news -->
       <section class="p-index-news">
         <div class="p-index-news__inner l-inner">

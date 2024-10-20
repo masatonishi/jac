@@ -1,0 +1,131 @@
+@use "../global" as *;
+
+.p-index-team {
+  background-color: var(--c-base);
+  padding: 45px 0;
+
+  @include mq(md) {
+    padding: 0 0 15px;
+  }
+}
+
+.p-index-team__container {
+  margin-top: 30px;
+
+  @include mq(md) {
+    margin-top: 75px;
+    display: grid;
+    grid-template:
+      "tabs body" auto
+      ". body" 40px
+      "button body" minmax(0, 1fr)
+      / min(320px, calc(320 / 1190 * 100vw)) minmax(0, 1fr);
+    column-gap: min(200px, calc(200 / 1190 * 100vw));
+  }
+}
+
+.p-index-team__labels {
+  padding: 0 15px;
+  display: grid;
+  row-gap: 8px;
+
+  @include mq(md) {
+    grid-area: tabs;
+    padding: 0;
+  }
+}
+
+.p-index-team__tab {
+  font-family: var(--second-font);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 22px;
+  color: #999;
+  text-align: left;
+
+  @include mq(md) {
+    font-size: 26px;
+  }
+}
+
+.p-index-team__tab[aria-selected="true"] {
+  color: var(--c-primary);
+  position: relative;
+}
+
+.p-index-team__tab[aria-selected="true"]::before {
+  content: "";
+  width: 9px;
+  aspect-ratio: 9 / 11;
+  background-color: currentColor;
+  clip-path: var(--clip-triangle-right);
+  position: absolute;
+  top: 0.4em;
+  left: -16px;
+}
+
+.p-index-team__body {
+  margin: 45px calc(50% - 50vw) 0;
+
+  @include mq(md) {
+    grid-area: body;
+    margin: 0 calc(50% - 50vw) 0 0;
+    width: 100vw;
+  }
+}
+
+.p-index-team__carousel {
+  position: relative;
+}
+
+.p-index-team__carousel-slide {
+  width: 250px;
+}
+
+.p-index-team__carousel-prev,
+.p-index-team__carousel-next {
+  --_x: calc(50% - 158px);
+  top: 155px;
+  width: auto;
+  height: auto;
+}
+
+.p-index-team__carousel-prev {
+  left: var(--_x);
+
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.p-index-team__carousel-next {
+  right: var(--_x);
+
+  @include mq(md) {
+    right: auto;
+    top: 50%;
+    left: -80px;
+    transform: translateY(calc(-50% - 10px)) scale(-1, 1);
+  }
+}
+
+.p-index-team__carousel-prev img,
+.p-index-team__carousel-next img {
+  width: 24px;
+  aspect-ratio: 24 / 53;
+
+  @include mq(md) {
+    width: 38px;
+    aspect-ratio: 38 / 90;
+  }
+}
+
+.p-index-team__button {
+  margin: 45px auto 0;
+  width: 190px;
+
+  @include mq(md) {
+    margin: 0;
+    grid-area: button;
+  }
+}

@@ -1,0 +1,28 @@
+@use "../global" as *;
+
+// c-card-member
+.c-card-member {
+  display: grid;
+  color: var(--c-primary);
+  text-align: center;
+}
+
+.c-card-member__role {
+  margin-top: 20px;
+}
+
+.c-card-member__name {
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.c-card-member__img {
+  order: -1;
+}
+
+.c-card-member__img img {
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 240 / 300;
+}

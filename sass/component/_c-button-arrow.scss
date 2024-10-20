@@ -7,7 +7,7 @@
   border-radius: var(--rounded-full);
   text-align: center;
   padding: 6px 15px 4px 10px;
-  transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
 
 @media (any-hover: hover) {
