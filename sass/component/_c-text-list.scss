@@ -16,3 +16,8 @@
   top: calc((1lh - var(--_size)) / 2);
   left: 0;
 }
+
+// 英語
+html[lang="en"] .c-text-list::before {
+  top: 0.75em;
+}

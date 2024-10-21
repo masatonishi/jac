@@ -258,6 +258,10 @@ html[lang=en] body {
   left: 0;
 }
 
+html[lang=en] .c-text-list::before {
+  top: 0.75em;
+}
+
 .c-tag {
   display: inline-block;
   font-weight: 700;
