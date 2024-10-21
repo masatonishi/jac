@@ -8,7 +8,15 @@
   }
 }
 
-.p-sub-page-header:has(.p-sub-page-header__inner) {
+.p-sub-page-header__inner {
+  padding: 0 35px;
+
+  @include mq(md) {
+    padding: 0 var(--padding-pc);
+  }
+}
+
+.p-sub-page-header:has(.p-sub-page-header__rows) {
   padding: 70px 0;
 
   @include mq(md) {
@@ -16,7 +24,7 @@
   }
 }
 
-.p-sub-page-header__inner {
+.p-sub-page-header__rows {
   display: grid;
   row-gap: 30px;
 

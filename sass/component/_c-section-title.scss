@@ -44,3 +44,12 @@
 .c-section-title--white span {
   color: var(--c-text-white);
 }
+
+// c-section-title--small
+.c-section-title--small span {
+  font-size: 40px;
+
+  @include mq(md) {
+    font-size: 100px;
+  }
+}
