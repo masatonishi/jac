@@ -1,7 +1,7 @@
 @use "../global" as *;
 
 .l-header {
-  background-image: url(/img/common/bg_header.jpg);
+  background-image: url(../img/common/bg_header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: right;
@@ -13,7 +13,7 @@
   z-index: var(--z-index-header);
 
   @include mq(md) {
-    background-image: url(/img/common/bg_header_pc.jpg);
+    background-image: url(../img/common/bg_header_pc.jpg);
     height: 80px;
   }
 }

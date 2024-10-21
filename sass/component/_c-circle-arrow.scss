@@ -19,7 +19,7 @@
   width: 9px;
   aspect-ratio: 8 / 4;
   background-color: currentColor;
-  mask-image: url(/img/common/icon_arrow_small.svg);
+  mask-image: url(../img/common/icon_arrow_small.svg);
   mask-size: contain;
   mask-repeat: no-repeat;
   position: absolute;
@@ -29,7 +29,7 @@
 
   @include mq(md) {
     width: 16px;
-    mask-image: url(/img/common/icon_arrow.svg);
+    mask-image: url(../img/common/icon_arrow.svg);
     top: calc(50% - 1px);
   }
 }

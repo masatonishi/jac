@@ -303,8 +303,8 @@ body {
   width: 9px;
   aspect-ratio: 8/4;
   background-color: currentColor;
-  -webkit-mask-image: url(/img/common/icon_arrow_small.svg);
-          mask-image: url(/img/common/icon_arrow_small.svg);
+  -webkit-mask-image: url(../img/common/icon_arrow_small.svg);
+          mask-image: url(../img/common/icon_arrow_small.svg);
   -webkit-mask-size: contain;
           mask-size: contain;
   -webkit-mask-repeat: no-repeat;
@@ -317,8 +317,8 @@ body {
 @media screen and (min-width: 768px) {
   .c-circle-arrow::before {
     width: 16px;
-    -webkit-mask-image: url(/img/common/icon_arrow.svg);
-            mask-image: url(/img/common/icon_arrow.svg);
+    -webkit-mask-image: url(../img/common/icon_arrow.svg);
+            mask-image: url(../img/common/icon_arrow.svg);
     top: calc(50% - 1px);
   }
 }
@@ -393,8 +393,8 @@ body {
   width: 29px;
   aspect-ratio: 29/6;
   background-color: currentColor;
-  -webkit-mask-image: url(/img/common/icon_arrow_long.svg);
-          mask-image: url(/img/common/icon_arrow_long.svg);
+  -webkit-mask-image: url(../img/common/icon_arrow_long.svg);
+          mask-image: url(../img/common/icon_arrow_long.svg);
   -webkit-mask-size: contain;
           mask-size: contain;
   -webkit-mask-repeat: no-repeat;
@@ -443,8 +443,8 @@ body {
 .c-button-arrow--small span::before {
   width: 19px;
   aspect-ratio: 19/7;
-  -webkit-mask-image: url(/img/common/icon_arrow.svg);
-          mask-image: url(/img/common/icon_arrow.svg);
+  -webkit-mask-image: url(../img/common/icon_arrow.svg);
+          mask-image: url(../img/common/icon_arrow.svg);
 }
 
 .c-button-arrow--small.c-button-arrow--reverse span {
@@ -786,7 +786,7 @@ body {
 }
 
 .l-header {
-  background-image: url(/img/common/bg_header.jpg);
+  background-image: url(../img/common/bg_header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: right;
@@ -799,7 +799,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .l-header {
-    background-image: url(/img/common/bg_header_pc.jpg);
+    background-image: url(../img/common/bg_header_pc.jpg);
     height: 80px;
   }
 }
@@ -1417,7 +1417,7 @@ body.is-drawerActive .p-global-menu__overlay {
 }
 
 .p-index-strategy {
-  background-image: url(/img/index/bg_strategy.png);
+  background-image: url(../img/index/bg_strategy.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 120px 0 52px;
@@ -1425,7 +1425,7 @@ body.is-drawerActive .p-global-menu__overlay {
 }
 @media screen and (min-width: 768px) {
   .p-index-strategy {
-    background-image: url(/img/index/bg_strategy_pc.png);
+    background-image: url(../img/index/bg_strategy_pc.png);
     padding: 190px 0 125px;
   }
 }
@@ -1941,7 +1941,7 @@ body.is-drawerActive .p-global-menu__overlay {
   content: "";
   width: 323px;
   aspect-ratio: 323/300;
-  background-image: url(/img/index/bg_approach.svg);
+  background-image: url(../img/index/bg_approach.svg);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -2014,7 +2014,7 @@ body.is-drawerActive .p-global-menu__overlay {
 .p-index-approach__item--business .p-index-approach__item-title::before {
   width: 60px;
   aspect-ratio: 60/35;
-  background-image: url(/img/index/icon_business.svg);
+  background-image: url(../img/index/icon_business.svg);
 }
 @media screen and (min-width: 768px) {
   .p-index-approach__item--business .p-index-approach__item-title::before {
@@ -2026,7 +2026,7 @@ body.is-drawerActive .p-global-menu__overlay {
 .p-index-approach__item--sustainability .p-index-approach__item-title::before {
   width: 59px;
   aspect-ratio: 59/56;
-  background-image: url(/img/index/icon_sustainability.svg);
+  background-image: url(../img/index/icon_sustainability.svg);
 }
 @media screen and (min-width: 768px) {
   .p-index-approach__item--sustainability .p-index-approach__item-title::before {
@@ -2038,7 +2038,7 @@ body.is-drawerActive .p-global-menu__overlay {
 .p-index-approach__item--dx .p-index-approach__item-title::before {
   width: 46px;
   aspect-ratio: 46/56;
-  background-image: url(/img/index/icon_dx.svg);
+  background-image: url(../img/index/icon_dx.svg);
 }
 @media screen and (min-width: 768px) {
   .p-index-approach__item--dx .p-index-approach__item-title::before {
@@ -2050,7 +2050,7 @@ body.is-drawerActive .p-global-menu__overlay {
 .p-index-approach__item--ir .p-index-approach__item-title::before {
   width: 40px;
   aspect-ratio: 40/48;
-  background-image: url(/img/index/icon_ir.svg);
+  background-image: url(../img/index/icon_ir.svg);
 }
 @media screen and (min-width: 768px) {
   .p-index-approach__item--ir .p-index-approach__item-title::before {
@@ -2062,7 +2062,7 @@ body.is-drawerActive .p-global-menu__overlay {
 .p-index-approach__item--hr .p-index-approach__item-title::before {
   width: 40px;
   aspect-ratio: 40/48;
-  background-image: url(/img/index/icon_hr.svg);
+  background-image: url(../img/index/icon_hr.svg);
 }
 @media screen and (min-width: 768px) {
   .p-index-approach__item--hr .p-index-approach__item-title::before {
@@ -2147,12 +2147,12 @@ body.is-drawerActive .p-global-menu__overlay {
   top: 0;
   left: 0;
   z-index: -1;
-  background-image: url(/img/index/pic_mount_fuji.jpg);
+  background-image: url(../img/index/pic_mount_fuji.jpg);
   background-position-x: center;
 }
 @media screen and (min-width: 768px) {
   .p-index-bg::before {
-    background-image: url(/img/index/pic_mount_fuji_pc.jpg);
+    background-image: url(../img/index/pic_mount_fuji_pc.jpg);
   }
 }
 

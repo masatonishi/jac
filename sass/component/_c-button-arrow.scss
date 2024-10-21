@@ -45,7 +45,7 @@
   width: 29px;
   aspect-ratio: 29 / 6;
   background-color: currentColor;
-  mask-image: url(/img/common/icon_arrow_long.svg);
+  mask-image: url(../img/common/icon_arrow_long.svg);
   mask-size: contain;
   mask-repeat: no-repeat;
   position: absolute;
@@ -95,7 +95,7 @@
 .c-button-arrow--small span::before {
   width: 19px;
   aspect-ratio: 19 / 7;
-  mask-image: url(/img/common/icon_arrow.svg);
+  mask-image: url(../img/common/icon_arrow.svg);
 }
 
 .c-button-arrow--small.c-button-arrow--reverse span {

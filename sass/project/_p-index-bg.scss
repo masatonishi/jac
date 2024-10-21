@@ -17,10 +17,10 @@
   top: 0;
   left: 0;
   z-index: -1;
-  background-image: url(/img/index/pic_mount_fuji.jpg);
+  background-image: url(../img/index/pic_mount_fuji.jpg);
   background-position-x: center;
 
   @include mq(md) {
-    background-image: url(/img/index/pic_mount_fuji_pc.jpg);
+    background-image: url(../img/index/pic_mount_fuji_pc.jpg);
   }
 }
