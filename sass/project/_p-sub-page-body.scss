@@ -25,3 +25,8 @@
 .p-sub-page-body a {
   text-decoration: revert;
 }
+
+// 英語
+html[lang="en"] .p-sub-page-body__items {
+  line-height: 1.5;
+}

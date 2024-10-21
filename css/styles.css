@@ -167,6 +167,10 @@ body {
   line-height: 1.5;
 }
 
+html[lang=en] body {
+  letter-spacing: 0.05em;
+}
+
 .c-section-title {
   width: -moz-fit-content;
   width: fit-content;
@@ -2407,6 +2411,10 @@ body.is-drawerActive .p-global-menu__overlay {
 .p-sub-page-body a {
   -webkit-text-decoration: revert;
           text-decoration: revert;
+}
+
+html[lang=en] .p-sub-page-body__items {
+  line-height: 1.5;
 }
 
 .p-entry-team__cols {
