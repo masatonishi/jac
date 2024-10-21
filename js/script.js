@@ -50,3 +50,46 @@ document.addEventListener("DOMContentLoaded", () => {
     globalMenu.setAttribute("aria-hidden", "true");
   });
 });
+
+// タブ
+document.addEventListener("DOMContentLoaded", function () {
+  const tabButtons = document.querySelectorAll('[data-tab="button"]');
+
+  tabButtons.forEach((button) => {
+    button.addEventListener("click", function (event) {
+      tabControl(event);
+    });
+  });
+
+  function tabControl(event) {
+    const tab = event.currentTarget;
+    const isSelected = tab.getAttribute("aria-selected") === "true";
+
+    // キーボード操作時にX座標が変わるとフォーカスを外す
+    if (event.clientX === 0) {
+      tab.blur();
+    }
+
+    if (isSelected) {
+      return;
+    }
+
+    const panelId = tab.getAttribute("aria-controls");
+    const panel = document.getElementById(panelId);
+
+    if (panel === null) {
+      return;
+    }
+
+    const activeTab = tab
+      .closest('[role="tablist"]')
+      .querySelector('[data-tab="item"] [aria-selected="true"]');
+    const activePanelId = activeTab.getAttribute("aria-controls");
+    const activePanel = document.getElementById(activePanelId);
+
+    tab.setAttribute("aria-selected", "true");
+    activeTab.setAttribute("aria-selected", "false");
+    panel.setAttribute("aria-hidden", "false");
+    activePanel.setAttribute("aria-hidden", "true");
+  }
+});

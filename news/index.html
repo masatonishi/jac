@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title></title>
+  <meta name="description" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="icon" href=“/favicon.ico”>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <!-- Twitterカード -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@アカウント名を入力">
+  <!-- URLの正規化 -->
+  <link rel=canonical href="正規のURL">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- JavaScript -->
+  <script type="module" src="/js/script.js"></script>
+</head>
+
+<body>
+  <div class="l-wrapper">
+    <!-- l-header -->
+    <header class="l-header">
+      <div class="l-header__inner">
+        <div class="l-header__logo">
+          <a href="/">
+            <img src="/img/common/logo_header.svg" alt="ジャパン・アクティベーション・キャピタル株式会社" width="286" height="40"
+              decoding="async">
+          </a>
+        </div>
+        <div class="l-header__control">
+          <div class="c-lang-switch c-lang-switch--primary">
+            <a href="/" class="c-lang-switch__link is-active">jp</a>
+            <a href="/en/" class="c-lang-switch__link">en</a>
+          </div>
+          <div class="l-header__button">
+            <button type="button" class="c-hamburger c-hamburger--primary js-hamburger-button"
+              aria-controls="js-global-menu" aria-expanded="false" aria-label="グローバルメニューを開閉する">
+              <span class="c-hamburger__line">
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /l-header -->
+    <!-- p-global-menu -->
+    <div class="p-global-menu" id="js-global-menu" aria-hidden="true">
+      <div class="p-global-menu__header">
+        <div class="p-global-menu__control">
+          <div class="c-lang-switch c-lang-switch--white">
+            <a href="/" class="c-lang-switch__link is-active">jp</a>
+            <a href="/en/" class="c-lang-switch__link">en</a>
+          </div>
+          <div class="p-global-menu__button">
+            <button type="button" class="c-hamburger js-hamburger-button" aria-controls="js-global-menu"
+              aria-expanded="false" aria-label="グローバルメニューを開閉する">
+              <span class="c-hamburger__line">
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="p-global-menu__body">
+        <div class="p-global-menu__logo">
+          <a href="/">
+            <img src="/img/common/logo_white.svg" alt="ジャパン・アクティベーション・キャピタル株式会社" width="260" height="80"
+              decoding="async">
+          </a>
+        </div>
+        <nav class="p-global-menu__nav">
+          <div class="p-global-menu__nav-cols">
+            <div>
+              <ul class="p-global-menu__nav-list">
+                <li class="p-global-menu__nav-item"><a href="/">about</a></li>
+                <li class="p-global-menu__nav-item"><a href="/">message</a></li>
+                <li class="p-global-menu__nav-item"><a href="/">mission& goal</a></li>
+                <li class="p-global-menu__nav-item"><a href="/">strategy</a></li>
+                <li class="p-global-menu__nav-item"><a href="/">approach</a></li>
+                <li class="p-global-menu__nav-item"><a href="/">team</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="p-global-menu__nav-list">
+                <li class="p-global-menu__nav-item"><a href="/">news</a></li>
+                <li class="p-global-menu__nav-item"><a href="/">office</a></li>
+                <li class="p-global-menu__nav-item"><a href="/">contact</a></li>
+              </ul>
+              <ul class="p-global-menu__sub-list">
+                <li class="p-global-menu__sub-item"><a href="/">利用規約</a></li>
+                <li class="p-global-menu__sub-item"><a href="/">プライバシーポリシー</a></li>
+                <li class="p-global-menu__sub-item"><a href="/">反社ポリシー</a></li>
+                <li class="p-global-menu__sub-item"><a href="/">ESGポリシー</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="p-global-menu__overlay" id="js-global-menu-overlay">
+    </div>
+    <!-- /p-global-menu -->
+    <main class="l-subpage">
+      <!-- p-sub-page-header -->
+      <div class="p-sub-page-header">
+        <div class="p-sub-page-header__inner l-inner">
+          <h1 class="c-section-title c-section-title--small"><span>news</span></h1>
+        </div>
+      </div>
+      <!-- /p-sub-page-header -->
+      <!-- p-archive-news -->
+      <div class="p-archive-news">
+        <div class="l-inner l-inner--s">
+          <div class="c-tab">
+            <ul class="p-archive-news__tab" role="tablist">
+              <li data-tab="item" role="presentation">
+                <button role="tab" class="p-archive-news__tab-button" aria-selected="true" aria-controls="tab-1"
+                  data-tab="button">all</button>
+              </li>
+              <li data-tab="item" role="presentation">
+                <button role="tab" class="p-archive-news__tab-button" aria-selected="false" aria-controls="tab-2"
+                  data-tab="button">press</button>
+              </li>
+              <li data-tab="item" role="presentation">
+                <button role="tab" class="p-archive-news__tab-button" aria-selected="false" aria-controls="tab-3"
+                  data-tab="button">media</button>
+              </li>
+            </ul>
+            <div class="p-archive-news__body">
+              <div id="tab-1" class="c-tab__content" aria-hidden="false">
+                <ul class="p-archive-news__list">
+                  <li class="c-news-item c-news-item--archive">
+                    <a href="/" class="c-news-item__link">
+                      <time datetime="2024-01-01" class="c-news-item__date c-date">2024.10.00</time>
+                      <p class="c-news-item__tag c-tag">press</p>
+                      <p class="c-news-item__title"><span>事務所移転のお知らせ</span></p>
+                      <div class="c-news-item__arrow"><span class="c-circle-arrow"></span></div>
+                    </a>
+                  </li>
+                  <li class="c-news-item c-news-item--archive">
+                    <a href="/" class="c-news-item__link">
+                      <time datetime="2024-01-01" class="c-news-item__date c-date">2024.10.00</time>
+                      <p class="c-news-item__tag c-tag">MEDIA</p>
+                      <p class="c-news-item__title"><span>Nikkei Financialにジャパン・アクティベーション・キャピタルが取り上げられました…</span></p>
+                      <div class="c-news-item__arrow"><span class="c-circle-arrow"></span></div>
+                    </a>
+                  </li>
+                  <li class="c-news-item c-news-item--archive">
+                    <a href="/" class="c-news-item__link">
+                      <time datetime="2024-01-01" class="c-news-item__date c-date">2024.10.00</time>
+                      <p class="c-news-item__tag c-tag">MEDIA</p>
+                      <p class="c-news-item__title">
+                        <span>テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。</span>
+                      </p>
+                      <div class="c-news-item__arrow"><span class="c-circle-arrow"></span></div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="p-archive-news__pagination">
+                  <ul class="c-pagination">
+                    <li class="c-pagination__item"><span>1</span></li>
+                    <li class="c-pagination__item"><a href="/">2</a></li>
+                    <li class="c-pagination__item"><a href="/">3</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="tab-2" class="c-tab__content" aria-hidden="true">
+                <ul class="p-archive-news__list">
+                  <li class="c-news-item c-news-item--archive">
+                    <a href="/" class="c-news-item__link">
+                      <time datetime="2024-01-01" class="c-news-item__date c-date">2024.10.00</time>
+                      <p class="c-news-item__tag c-tag">press</p>
+                      <p class="c-news-item__title"><span>事務所移転のお知らせ</span></p>
+                      <div class="c-news-item__arrow"><span class="c-circle-arrow"></span></div>
+                    </a>
+                  </li>
+                  <li class="c-news-item c-news-item--archive">
+                    <a href="/" class="c-news-item__link">
+                      <time datetime="2024-01-01" class="c-news-item__date c-date">2024.10.00</time>
+                      <p class="c-news-item__tag c-tag">MEDIA</p>
+                      <p class="c-news-item__title"><span>Nikkei Financialにジャパン・アクティベーション・キャピタルが取り上げられました…</span></p>
+                      <div class="c-news-item__arrow"><span class="c-circle-arrow"></span></div>
+                    </a>
+                  </li>
+                  <li class="c-news-item c-news-item--archive">
+                    <a href="/" class="c-news-item__link">
+                      <time datetime="2024-01-01" class="c-news-item__date c-date">2024.10.00</time>
+                      <p class="c-news-item__tag c-tag">MEDIA</p>
+                      <p class="c-news-item__title">
+                        <span>テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。</span>
+                      </p>
+                      <div class="c-news-item__arrow"><span class="c-circle-arrow"></span></div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="p-archive-news__pagination">
+                  <ul class="c-pagination">
+                    <li class="c-pagination__item"><span>1</span></li>
+                    <li class="c-pagination__item"><a href="/">2</a></li>
+                    <li class="c-pagination__item"><a href="/">3</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="tab-3" class="c-tab__content" aria-hidden="true">
+                <ul class="p-archive-news__list">
+                  <li class="c-news-item c-news-item--archive">
+                    <a href="/" class="c-news-item__link">
+                      <time datetime="2024-01-01" class="c-news-item__date c-date">2024.10.00</time>
+                      <p class="c-news-item__tag c-tag">press</p>
+                      <p class="c-news-item__title"><span>事務所移転のお知らせ</span></p>
+                      <div class="c-news-item__arrow"><span class="c-circle-arrow"></span></div>
+                    </a>
+                  </li>
+                  <li class="c-news-item c-news-item--archive">
+                    <a href="/" class="c-news-item__link">
+                      <time datetime="2024-01-01" class="c-news-item__date c-date">2024.10.00</time>
+                      <p class="c-news-item__tag c-tag">MEDIA</p>
+                      <p class="c-news-item__title"><span>Nikkei Financialにジャパン・アクティベーション・キャピタルが取り上げられました…</span></p>
+                      <div class="c-news-item__arrow"><span class="c-circle-arrow"></span></div>
+                    </a>
+                  </li>
+                  <li class="c-news-item c-news-item--archive">
+                    <a href="/" class="c-news-item__link">
+                      <time datetime="2024-01-01" class="c-news-item__date c-date">2024.10.00</time>
+                      <p class="c-news-item__tag c-tag">MEDIA</p>
+                      <p class="c-news-item__title">
+                        <span>テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。</span>
+                      </p>
+                      <div class="c-news-item__arrow"><span class="c-circle-arrow"></span></div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="p-archive-news__pagination">
+                  <ul class="c-pagination">
+                    <li class="c-pagination__item"><span>1</span></li>
+                    <li class="c-pagination__item"><a href="/">2</a></li>
+                    <li class="c-pagination__item"><a href="/">3</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /p-archive-news -->
+    </main>
+    <!-- l-footer -->
+    <footer class="l-footer">
+      <div class="l-footer__inner l-inner">
+        <nav class="l-footer__nav">
+          <ul class="l-footer__nav-list">
+            <li class="l-footer__nav-item"><a href="/">利用規約</a></li>
+            <li class="l-footer__nav-item"><a href="/">プライバシーポリシー</a></li>
+            <li class="l-footer__nav-item"><a href="/">反社ポリシー</a></li>
+            <li class="l-footer__nav-item"><a href="/">ESGポリシー</a></li>
+          </ul>
+        </nav>
+        <small class="l-footer__copy">©2024 JAPAN ACTIVATION CAPITAL</small>
+      </div>
+    </footer>
+    <!-- /l-footer -->
+  </div>
+</body>
+
+</html>

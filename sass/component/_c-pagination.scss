@@ -1,0 +1,46 @@
+@use "../global" as *;
+
+.c-pagination {
+  --_theme-font-color: #b3b3b3;
+  display: flex;
+  justify-content: center;
+
+  @include mq(md) {
+    column-gap: 3px;
+  }
+}
+
+.c-pagination__item {
+}
+
+.c-pagination__item a,
+.c-pagination__item span {
+  display: inline-block;
+  font-family: var(--second-font);
+  font-style: italic;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 10px;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: 18px;
+  }
+}
+
+.c-pagination__item a {
+  color: var(--_theme-font-color);
+  text-decoration: revert;
+  transition: color 0.3s;
+}
+
+@media (any-hover: hover) {
+  .c-pagination__item a:hover {
+    opacity: 1;
+    color: var(--c-primary);
+  }
+}
+
+.c-pagination__item span {
+  color: var(--c-primary);
+}

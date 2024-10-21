@@ -1,6 +1,5 @@
 @use "../global" as *;
 
-// c-news-item
 .c-news-item {
   border-bottom: 1px solid var(--c-base);
   padding-bottom: 16px;
@@ -15,7 +14,7 @@
   grid-template:
     "date . tag . ."
     "title title title . icon"
-    / auto 10px 1fr 10px auto;
+    / auto 10px 1fr 30px auto;
   row-gap: 8px;
 
   @include mq(md) {
@@ -82,5 +81,20 @@
 
   @include mq(md) {
     align-self: center;
+  }
+}
+
+// c-news-item--archive
+.c-news-item--archive {
+  border-color: var(--c-primary);
+}
+
+.c-news-item--archive .c-news-item__link {
+  @include mq(md) {
+    grid-template:
+      "date . tag . ."
+      "title title title . icon"
+      / auto 10px 1fr 30px auto;
+    row-gap: 6px;
   }
 }
