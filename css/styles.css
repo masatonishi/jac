@@ -695,17 +695,6 @@ body {
   }
 }
 
-.c-text-default {
-  font-size: 15px;
-  line-height: 1.733;
-}
-@media screen and (min-width: 768px) {
-  .c-text-default {
-    font-size: 16px;
-    line-height: 1.75;
-  }
-}
-
 .l-inner {
   width: min(var(--sp-max-width), 100%);
   padding: 0 var(--padding-sp);
@@ -2317,9 +2306,26 @@ body.is-drawerActive .p-global-menu__overlay {
   }
 }
 
-.p-sub-page-body__content {
+.p-sub-page-body__items {
   display: grid;
   row-gap: 1.5em;
+  font-size: 15px;
+  line-height: 1.733;
+}
+@media screen and (min-width: 768px) {
+  .p-sub-page-body__items {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
+
+.p-sub-page-body__item {
+  margin-top: 1.5em;
+}
+
+.p-sub-page-body a {
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
 }
 
 .u-hidden {
