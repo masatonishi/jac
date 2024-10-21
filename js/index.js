@@ -68,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
   teamSliderWrappers.forEach((teamSliderWrapper) => {
     const teamSliderSlides =
       teamSliderWrapper.querySelectorAll(".swiper-slide");
-    const slideLength = teamSliderSlides.length;
 
     function initializeSlider() {
       return new Swiper(teamSliderWrapper.querySelector(".swiper"), {
