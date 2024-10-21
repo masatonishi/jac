@@ -2138,29 +2138,15 @@ body.is-drawerActive .p-global-menu__overlay {
 }
 
 .p-index-bg {
+  background-color: var(--c-primary);
+}
+
+.p-index-bg__img {
   height: 200px;
 }
 @media screen and (min-width: 768px) {
-  .p-index-bg {
-    height: 400px;
-  }
-}
-
-.p-index-bg::before {
-  content: "";
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-image: url(../img/index/pic_mount_fuji.jpg);
-  background-position-x: center;
-}
-@media screen and (min-width: 768px) {
-  .p-index-bg::before {
-    background-image: url(../img/index/pic_mount_fuji_pc.jpg);
+  .p-index-bg__img {
+    height: max(400px, 27.7777777778vw);
   }
 }
 

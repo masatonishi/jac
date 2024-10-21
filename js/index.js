@@ -54,3 +54,33 @@ document.addEventListener("DOMContentLoaded", function () {
     initializeSlider();
   });
 });
+
+// パララックス
+const items = document.querySelectorAll("[data-parallax]");
+
+for (const item of items) {
+  const y = item.getAttribute("data-y") ?? "5%";
+  const scale = item.getAttribute("data-scale") ?? "1.1";
+  const delay = parseFloat(item.getAttribute("data-delay")) || 1.5;
+  const img = item.querySelector("img");
+
+  gsap.set(item, { overflow: "hidden" });
+  gsap.set(img, { scale: scale });
+
+  gsap.fromTo(
+    img,
+    {
+      y: `-${y}`,
+    },
+    {
+      y: y,
+      scrollTrigger: {
+        trigger: item,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: delay,
+      },
+      ease: "none",
+    }
+  );
+}
