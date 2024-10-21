@@ -8,19 +8,19 @@
   }
 }
 
+.p-sub-page-header--wide {
+  padding: 70px 0;
+
+  @include mq(md) {
+    padding: 85px 0 75px;
+  }
+}
+
 .p-sub-page-header__inner {
   padding: 0 35px;
 
   @include mq(md) {
     padding: 0 var(--padding-pc);
-  }
-}
-
-.p-sub-page-header:has(.p-sub-page-header__rows) {
-  padding: 70px 0;
-
-  @include mq(md) {
-    padding: 85px 0 75px;
   }
 }
 
