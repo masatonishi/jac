@@ -1,0 +1,11 @@
+@use "../global" as *;
+
+.c-text-default {
+  font-size: 15px;
+  line-height: 1.733;
+
+  @include mq(md) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}

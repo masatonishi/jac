@@ -1,0 +1,12 @@
+@use "../global" as *;
+
+.p-sub-page-body__inner {
+  @include mq(md) {
+    width: min((var(--inner-s) + var(--padding-pc) * 2), 100%);
+  }
+}
+
+.p-sub-page-body__content {
+  display: grid;
+  row-gap: 1.5em;
+}

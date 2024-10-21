@@ -1,6 +1,14 @@
 @use "../global" as *;
 
 .p-sub-page-header {
+  padding: 70px 0 35px;
+
+  @include mq(md) {
+    padding: 85px 0 60px;
+  }
+}
+
+.p-sub-page-header:has(.p-sub-page-header__inner) {
   padding: 70px 0;
 
   @include mq(md) {
@@ -8,7 +16,7 @@
   }
 }
 
-.l-subpage__inner {
+.p-sub-page-header__inner {
   display: grid;
   row-gap: 30px;
 
