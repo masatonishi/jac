@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         observeParents: true,
       });
     }
+
     initializeSlider();
   });
 });
