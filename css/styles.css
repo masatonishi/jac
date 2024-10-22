@@ -868,6 +868,8 @@ html[lang=en] .c-text-list::before {
   padding: 40px 0 0 0;
   color: var(--c-text-white);
   background-color: var(--c-primary);
+  position: relative;
+  z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .l-footer {
@@ -948,6 +950,13 @@ html[lang=en] .c-text-list::before {
 
 .l-main {
   min-height: 100svh;
+}
+
+.l-index__wrapper {
+  margin-top: var(--mv-height);
+  background-color: var(--c-base);
+  position: relative;
+  z-index: 2;
 }
 
 .l-subpage {
@@ -1784,12 +1793,22 @@ body.is-drawerActive .p-global-menu__overlay {
 
 .p-index-mv {
   height: 100svh;
-  min-height: 500px;
-  position: relative;
+  min-height: 420px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .p-index-mv {
+    min-height: 500px;
+  }
 }
 
 .p-index-mv__inner {
   height: inherit;
+  min-height: inherit;
   position: relative;
   z-index: 1;
 }

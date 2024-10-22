@@ -1,0 +1,8 @@
+@use "../global" as *;
+
+.l-index__wrapper {
+  margin-top: var(--mv-height);
+  background-color: var(--c-base);
+  position: relative;
+  z-index: 2;
+}

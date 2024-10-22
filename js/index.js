@@ -16,6 +16,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// ファーストビューの高さを取得してCSS変数に設定
+document.addEventListener("DOMContentLoaded", function () {
+  const mvElement = document.querySelector('[ data-index="mv"]');
+
+  function getMvHeight() {
+    const height = mvElement.offsetHeight;
+    document.documentElement.style.setProperty("--mv-height", `${height}px`);
+  }
+
+  getMvHeight();
+  window.addEventListener("resize", getMvHeight);
+});
+
 // Teamセクションスライダー
 document.addEventListener("DOMContentLoaded", function () {
   const teamSliderWrappers = document.querySelectorAll(
