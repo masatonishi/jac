@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title></title>
+  <meta name="description" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="icon" href=“/favicon.ico”>
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <!-- Twitterカード -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@アカウント名を入力">
+  <!-- URLの正規化 -->
+  <link rel=canonical href="正規のURL">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- JavaScript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.7.0/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.7.0/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="module" src="../js/script.js"></script>
+  <script type="module" src="../js/index.js"></script>
+</head>
+
+<body class="l-index">
+  <div class="l-index__mask"></div>
+  <div class="l-wrapper">
+    <!-- l-header -->
+    <header class="l-header" data-following-header>
+      <div class="l-header__inner">
+        <div class="l-header__logo">
+          <a href="/">
+            <img src="../img/common/logo_header.svg" alt="ジャパン・アクティベーション・キャピタル株式会社" width="286" height="40"
+              decoding="async">
+          </a>
+        </div>
+        <div class="l-header__control">
+          <div class="c-lang-switch c-lang-switch--primary">
+            <a href="/" class="c-lang-switch__link">jp</a>
+            <a href="./en/" class="c-lang-switch__link is-active">en</a>
+          </div>
+          <div class="l-header__button">
+            <button type="button" class="c-hamburger c-hamburger--primary js-hamburger-button"
+              aria-controls="js-global-menu" aria-expanded="false" aria-label="グローバルメニューを開閉する">
+              <span class="c-hamburger__line">
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /l-header -->
+    <!-- p-global-menu -->
+    <div class="p-global-menu" id="js-global-menu" aria-hidden="true">
+      <div class="p-global-menu__header">
+        <div class="p-global-menu__control">
+          <div class="c-lang-switch c-lang-switch--white">
+            <a href="/" class="c-lang-switch__link is-active">jp</a>
+            <a href="../en/" class="c-lang-switch__link">en</a>
+          </div>
+          <div class="p-global-menu__button">
+            <button type="button" class="c-hamburger js-hamburger-button" aria-controls="js-global-menu"
+              aria-expanded="false" aria-label="グローバルメニューを開閉する">
+              <span class="c-hamburger__line">
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="p-global-menu__body">
+        <div class="p-global-menu__logo">
+          <a href="/">
+            <img src="../img/common/logo_white.svg" alt="ジャパン・アクティベーション・キャピタル株式会社" width="260" height="80"
+              decoding="async">
+          </a>
+        </div>
+        <nav class="p-global-menu__nav">
+          <div class="p-global-menu__nav-cols">
+            <div>
+              <ul class="p-global-menu__nav-list">
+                <li class="p-global-menu__nav-item"><a href="../en/#about">about</a></li>
+                <li class="p-global-menu__nav-item"><a href="../en/#message">message</a></li>
+                <li class="p-global-menu__nav-item"><a href="../en/#mission">mission& goal</a></li>
+                <li class="p-global-menu__nav-item"><a href="../en/#strategy">strategy</a></li>
+                <li class="p-global-menu__nav-item"><a href="../en/#approach">approach</a></li>
+                <li class="p-global-menu__nav-item"><a href="../en/team/">team</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="p-global-menu__nav-list">
+                <li class="p-global-menu__nav-item"><a href="../en/news/">news</a></li>
+                <li class="p-global-menu__nav-item"><a href="../en/#office">office</a></li>
+                <li class="p-global-menu__nav-item"><a href="../en/#contact">contact</a></li>
+              </ul>
+              <ul class="p-global-menu__sub-list">
+                <li class="p-global-menu__sub-item"><a href="../en/terms/">Terms of Use</a></li>
+                <li class="p-global-menu__sub-item"><a href="../en/privacy/">Privacy Policy</a></li>
+                <li class="p-global-menu__sub-item"><a href="../en/antisocial/">反社ポリシー</a></li>
+                <li class="p-global-menu__sub-item"><a href="../en/esg/">ESGポリシー</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="p-global-menu__overlay" id="js-global-menu-overlay">
+    </div>
+    <!-- /p-global-menu -->
+    <main class="l-main">
+      <!-- p-index-mv -->
+      <div class="p-index-mv" data-index="mv">
+        <div class="p-index-mv__inner">
+          <div class="p-index-mv__cols">
+            <h1 class="p-index-mv__logo">
+              <a href="/">
+                <img src="../img/common/logo.svg" alt="ジャパン・アクティベーション・キャピタル株式会社" width="155" height="48"
+                  decoding="async">
+              </a>
+            </h1>
+            <div class="p-index-mv__control">
+              <div class="c-lang-switch">
+                <a href="/" class="c-lang-switch__link">jp</a>
+                <a href="./en/" class="c-lang-switch__link is-active">en</a>
+              </div>
+              <div class="p-index-mv__button">
+                <button type="button" class="c-hamburger js-hamburger-button" aria-controls="js-global-menu"
+                  aria-expanded="false" aria-label="グローバルメニューを開閉する">
+                  <span class="c-hamburger__line">
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="p-index-mv__texts">
+            <p class="p-index-mv__sub-text">FUND THE EXTRAORDINARY<br> YOUR LONG-TERM GROWTH PARTNER</p>
+            <p class="p-index-mv__main-text">CAPITAL <br class="u-mobile">FOR <br class="u-mobile">CHANGE</p>
+          </div>
+        </div>
+        <div class="p-index-mv__bg">
+          <picture>
+            <source srcset="../img/index/bg_mv_pc.jpg" media="(min-width: 768px)" />
+            <img src="../img/index/bg_mv.jpg" alt="" width="390" height="700" decoding="async">
+          </picture>
+        </div>
+      </div>
+      <!-- /p-index-mv -->
+      <div class="l-index__wrapper">
+        <!-- p-index-about -->
+        <section id="about" class="p-index-about" data-second-section>
+          <div class="p-index-about__inner l-inner u-fadeInDown" data-scroll-animation>
+            <h2 class="c-section-title"><span>about</span></h2>
+            <div class="p-index-about__body">
+              <p class="p-index-about__lead">
+                We are the first newly established fund<br>
+                management company in Japanto apply<br>
+                a buyout fund-type valuecreation approach<br>
+                as a minority shareholder to a listed company.<br>
+              </p>
+              <p class="p-index-about__text">
+                Japan Activation Capital (JAC) is a fund specializing in minority investments in major listed companies
+                in Japan, and promotes long-term, sustainable value creation as a shareholder.<br>
+                While taking risks as a shareholder, we support the bold decision-making and implementation of
+                initiatives by managers with the intention of change.<br>
+                JAC supports the enhancement of the added value of its portfolio companies with a diverse background mix
+                of founders and CEOs from major foreign PEs, strategic consultants, PEs, investment banks, and business
+                companies, as well as various management experience as advisors.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- /p-index-about -->
+        <!-- p-index-message -->
+        <section id="message" class="p-index-message">
+          <div class="p-index-message__inner l-inner u-fadeInDown" data-scroll-animation>
+            <h2 class="p-index-message__title c-section-title c-section-title--reverse"><span>message</span></h2>
+            <div class="p-index-message__cols">
+              <div class="p-index-message__body">
+                <p class="p-index-message__lead"><strong>Supporting the revival of Japan companies</strong></p>
+                <p class="p-index-message__text">
+                  Despite their intention to change, there are many listed companies that have not taken action. I want
+                  to support such companies.<br>
+                  In terms of technology, human resources, and financial power, there is no difference between Japan and
+                  American companies. What makes the difference is the ability to execute management and the sense of
+                  speed.<br>
+                  We will close this gap and support the promotion of management reform with a sense of speed. If this
+                  can be done, expectations for the future of the company will increase, and the multiples used in the
+                  evaluation of corporate value and stock value will also increase.
+                </p>
+                <div class="p-index-message__sign">
+                  Chief Executive Officer (Founder)<span>Hiroyuki Otsuka</span>
+                </div>
+              </div>
+              <figure class="p-index-message__img c-shadow-item">
+                <img src="../img/index/pic_otsuka.jpg" alt="Chief Executive Officer (Founder) Hiroyuki Otsuka"
+                  width="240" height="300" decoding="async">
+              </figure>
+            </div>
+          </div>
+          <div class="p-index-message__bg">
+            <picture>
+              <source srcset="../img/index/bg_message_1_pc.png" media="(min-width: 1310px)" />
+              <img src="../img/index/bg_message_1.png" alt="" width="390" height="1259" decoding="async">
+            </picture>
+          </div>
+          <div class="p-index-message__foot">
+            <picture>
+              <source srcset="../img/index/bg_message_2_pc.png" media="(min-width: 768px)" />
+              <img src="../img/index/bg_message_2.png" alt="" width="390" height="300" decoding="async">
+            </picture>
+          </div>
+        </section>
+        <!-- /p-index-message -->
+        <!-- p-index-mission -->
+        <section id="mission" class="p-index-mission">
+          <div class="p-index-mission__inner l-inner">
+            <h2 class="p-index-mission__title c-section-title u-fadeInDown" data-scroll-animation>
+              <span>mission</span><br><span>& goal</span>
+            </h2>
+            <p class="p-index-mission__lead u-fadeInDown" data-scroll-animation>
+              Through the funds it manages, Japan Activation Capital aims to "achieve corporate growth and sustainable
+              market capitalization growth with sustained expectations over the medium to long term through trust-based
+              dialogue with investee management aiming for a new stage of growth and support for the implementation of
+              management initiatives"
+            </p>
+            <ul class="p-index-mission__list u-fadeInUp" data-scroll-animation>
+              <li class="p-index-mission__ltem">
+                <p class="p-index-mission__number">
+                  <span>goal</span><em>01</em>
+                </p>
+                <p class="p-index-mission__title">Helping Japan's leading<br> companies realize their potential</p>
+                <div class="p-index-mission__texts">
+                  <p class="u-font-bold">Through investment, we aim to increase the number of companies that can achieve
+                    high stock prices through high stock valuation multiple with growth expectations and sustainability
+                  </p>
+                  <p>We support investee companies to evolve into companies that can make the stock market and
+                    stakeholders (customers and employees) feel a high sense of "expectation" for the future</p>
+                </div>
+                <figure class="p-index-mission__icon">
+                  <img src="../img/index/icon_goal_1.svg" alt="棒グラフのアイコン" width="76" height="76" decoding="async">
+                </figure>
+              </li>
+              <li class="p-index-mission__ltem">
+                <p class="p-index-mission__number">
+                  <span>goal</span><em>02</em>
+                </p>
+                <p class="p-index-mission__title">Restoring the good reputation<br> of Japan's major companies</p>
+                <div class="p-index-mission__texts">
+                  <p class="u-font-bold">We aim not only to transform the companies in which we invest, but also to have
+                    a healthy impact on the industry to which the company belongs and the entire Japan economy</p>
+                  <p>Through the transformation of our portfolio companies, we aim to have a healthy impact on the
+                    industries in which we invest, which in turn will lead to high growth of the Japan economy as a
+                    whole</p>
+                </div>
+                <figure class="p-index-mission__icon">
+                  <img src="../img/index/icon_goal_2.svg" alt="折れ線グラフのアイコン" width="76" height="76" decoding="async">
+                </figure>
+              </li>
+              <li class="p-index-mission__ltem">
+                <p class="p-index-mission__number">
+                  <span>goal</span><em>03</em>
+                </p>
+                <p class="p-index-mission__title">Fostering a virtuous spiral<br> throughout Japan society</p>
+                <div class="p-index-mission__texts">
+                  <p class="u-font-bold">We aim to foster a virtuous spiral for society as a whole.</p>
+                  <p>In addition to supporting sustainability activities at our portfolio companies, we encourage them
+                    to contribute to the company's employees and small and medium-sized business partners in the value
+                    chain, which will lead to the sustainability of the growth of the investee companies</p>
+                </div>
+                <figure class="p-index-mission__icon">
+                  <img src="../img/index/icon_goal_3.svg" alt="棒グラフのアイコン" width="76" height="76" decoding="async">
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- /p-index-mission -->
+        <!-- p-index-strategy -->
+        <section id="strategy" class="p-index-strategy">
+          <div class="p-index-strategy__inner l-inner">
+            <h2 class="c-section-title c-section-title--reverse u-fadeInDown" data-scroll-animation>
+              <span>strategy</span>
+            </h2>
+            <ul class="p-index-strategy__list">
+              <li class="p-index-strategy__item u-fadeInUp" data-scroll-animation>
+                <span class="p-index-strategy__number">[ 01 ]</span>
+                <p class="p-index-strategy__header">Boosting the potential of<br> publicly traded companies</p>
+                <div class="p-index-strategy__body">
+                  <p>
+                    Minority investment in listed companies that have not reached their potential
+                    Acquire about 5-10% of the shares of major listed companies in Japan and support investees as a
+                    major shareholder
+                  </p>
+                </div>
+              </li>
+              <li class="p-index-strategy__item u-fadeInUp" data-scroll-animation>
+                <span class="p-index-strategy__number">[ 02 ]</span>
+                <p class="p-index-strategy__header">Supporting a management team<br> with a strong desire to change</p>
+                <div class="p-index-strategy__body">
+                  <p>While taking risks as a shareholder, we support bold decision-making and the implementation of
+                    initiatives by managers with the intention of change</p>
+                </div>
+              </li>
+              <li class="p-index-strategy__item u-fadeInUp" data-scroll-animation>
+                <span class="p-index-strategy__number">[ 03 ]</span>
+                <p class="p-index-strategy__header">Active support for value creation</p>
+                <div class="p-index-strategy__body">
+                  <p>Value creation through a buyout fund approach
+                    Hold discussions with management on strategy ("What to do") and support execution ("How to do it")
+                  </p>
+                </div>
+              </li>
+              <li class="p-index-strategy__item u-fadeInUp" data-scroll-animation>
+                <span class="p-index-strategy__number">[ 04 ]</span>
+                <p class="p-index-strategy__header">Long-term growth</p>
+                <div class="p-index-strategy__body">
+                  <p>Have a medium- to long-term vision (what the company will look like in 10 years) and act as an
+                    opinion leader for shareholders
+                  </p>
+                </div>
+              </li>
+              <li class="p-index-strategy__item u-fadeInUp" data-scroll-animation>
+                <span class="p-index-strategy__number">[ 05 ]</span>
+                <p class="p-index-strategy__header">In Depth Research</p>
+                <div class="p-index-strategy__body">
+                  <p>Conclude NDAs with investees and provide support for management reforms as an insider</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- /p-index-strategy -->
+        <!-- p-index-bg -->
+        <div class="p-index-bg">
+          <div class="p-index-bg__img" data-parallax data-y="5%" data-delay="0.75">
+            <picture>
+              <source srcset="../img/index/pic_mount_fuji_pc.jpg" media="(min-width: 768px)" />
+              <img src="../img/index/pic_mount_fuji.jpg" alt="上空から撮影した富士山" width="" height="" decoding="async">
+            </picture>
+          </div>
+        </div>
+        <!-- /p-index-bg -->
+        <!-- p-index-approach -->
+        <section id="approach" class="p-index-approach">
+          <div class="p-index-approach__bg">
+            <div class="p-index-approach__inner l-inner">
+              <h2 class="p-index-approach__title c-section-title c-section-title--white u-fadeInDown"
+                data-scroll-animation><span>approach</span></h2>
+              <div class="p-index-approach__lead u-fadeInDown" data-scroll-animation>
+                <p>
+                  Our company was founded by a former member of a major global private equity fund with experience in
+                  helping numerous Japan companies transform, and includes former strategic consulting firms, private
+                  equity funds, publicly traded equity funds, investment banks, and business companies. Operating
+                  executives and senior advisors with experience in leading transformations as management teams at major
+                  operating companies and financial institutions will gather to pursue the provision of high added value
+                  to investees through their diverse knowledge and networks
+                </p>
+                <p>
+                  In addition, the Company's directors, members of the Investment Advisory Committee, and advisors are
+                  also external experts with a number of achievements, and by incorporating outside knowledge into the
+                  Company's strategic planning, management decisions, and investment decisions, the Company will provide
+                  maximum added value to its portfolio companies and conduct management with
+                </p>
+              </div>
+              <div class="p-index-approach__items">
+                <section class="p-index-approach__item p-index-approach__item--business u-fadeInUp"
+                  data-scroll-animation>
+                  <div class="p-index-approach__item-header">
+                    <h3 class="p-index-approach__item-title">business</h3>
+                    <p class="p-index-approach__item-lead">
+                      As a major shareholder, we support listed companies in Japan that have management teams that
+                      intend to transform into companies that can generate a long-term, sustainable sense of
+                      expectation, through medium- to long-term minority investments
+                    </p>
+                  </div>
+                  <div class="p-index-approach__item-body">
+                    <ul>
+                      <li class="c-text-list">We invest in major and medium-sized companies listed on the Tokyo Stock
+                        Exchange</li>
+                      <li class="c-text-list">Based on a relationship of trust with management with a strong will for
+                        change and growth, we not only discuss strategies and other matters, but also support the
+                        implementation of management initiatives</li>
+                      <li class="c-text-list">We do not propose short-term measures to improve the stock price, such as
+                        share buybacks, but support the risk-taking of the management team so that bold management
+                        initiatives can be taken with the aim of "substantial and sustainable corporate growth" and
+                        "sustainable improvement of shareholder value accompanied by an increase in multiple valuations
+                        in the stock market (a sense of expectation from shareholders)"</li>
+                    </ul>
+                  </div>
+                </section>
+                <section class="p-index-approach__item p-index-approach__item--sustainability u-fadeInUp"
+                  data-scroll-animation>
+                  <div class="p-index-approach__item-header">
+                    <h3 class="p-index-approach__item-title">sustainability</h3>
+                    <p class="p-index-approach__item-lead">
+                      Companies need to respond to environmental and social risks and proactively respond to new
+                      business opportunities that arise around them. Good Growth, a business that grows together with
+                      the environment and society, will strengthen Japan's industry in the medium to long term and
+                      create a prosperous society. JAC will provide the following support to support and accelerate the
+                      Good Growth of Japan companies.
+                    </p>
+                  </div>
+                  <div class="p-index-approach__item-body">
+                    <ul>
+                      <li class="c-text-list">Formulation of a clear sustainability policy with an eye on medium- to
+                        long-term trends</li>
+                      <li class="c-text-list">Selection and concentration of sustainability initiatives that contribute
+                        to business growth and enhancement of corporate value</li>
+                      <li class="c-text-list">Coordination with brand strategy and IR strategy</li>
+                      <li class="c-text-list">Incentive design and implementation system to implement the plan</li>
+                    </ul>
+                    <div class="p-index-approach__item-link"><a href="../en/esg/">Link to ESG Policy Page</a></div>
+                  </div>
+                </section>
+                <div class="p-index-approach__cols">
+                  <section class="p-index-approach__item p-index-approach__item--dx u-fadeInUp" data-scroll-animation>
+                    <div class="p-index-approach__item-header">
+                      <h3 class="p-index-approach__item-title">dx</h3>
+                      <p class="p-index-approach__item-lead">
+                        Supporting upgrades to new business models based on the premise of a digital society
+                      </p>
+                    </div>
+                    <div class="p-index-approach__item-body">
+                      <ul>
+                        <li class="c-text-list">Shift to recurring and service models to contribute to business
+                          robustness and profitability</li>
+                        <li class="c-text-list">Support for agile management systems that make decisions quickly in a
+                          rapidly changing environment</li>
+                        <li class="c-text-list">デジタル人材の育成と確保、組織作り支援</li>
+                      </ul>
+                    </div>
+                  </section>
+                  <section class="p-index-approach__item p-index-approach__item--ir u-fadeInUp" data-scroll-animation>
+                    <div class="p-index-approach__item-header">
+                      <h3 class="p-index-approach__item-title">ir</h3>
+                      <p class="p-index-approach__item-lead">
+                        Communicating with the capital markets and cultivating high-quality shareholders
+                      </p>
+                    </div>
+                    <div class="p-index-approach__item-body">
+                      <ul>
+                        <li class="c-text-list">Fostering a sense of market anticipation through effective communication
+                          of growth strategies</li>
+                        <li class="c-text-list">Build a relationship of trust with investors through regular
+                          communication and provision of information</li>
+                        <li class="c-text-list">Grasp market trends and competitor movements, and support the
+                          dissemination of information at the appropriate time</li>
+                      </ul>
+                    </div>
+                  </section>
+                  <section class="p-index-approach__item p-index-approach__item--hr u-fadeInUp" data-scroll-animation>
+                    <div class="p-index-approach__item-header">
+                      <h3 class="p-index-approach__item-title">hr</h3>
+                      <p class="p-index-approach__item-lead">
+                        Upgrading organizations and human resources to support the acceleration of business
+                        transformation
+                      </p>
+                    </div>
+                    <div class="p-index-approach__item-body">
+                      <ul>
+                        <li class="c-text-list">
+                          HR policy：Linking talent management, including the hiring of external personnel, to growth
+                          strategy
+                        </li>
+                        <li class="c-text-list">
+                          Compensation system：Designed incentives to encourage risk-taking for future growth
+                        </li>
+                        <li class="c-text-list">
+                          Organizational Culture：Optimize business and functional roles and enhance global business
+                          management
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /p-index-approach -->
+        <!-- p-index-team -->
+        <section class="p-index-team">
+          <div class="l-inner u-fadeInDown" data-scroll-animation>
+            <h2 class="c-section-title c-section-title--reverse"><span>team</span></h2>
+            <div class="p-index-team__container c-tab">
+              <ul class="p-index-team__labels" role="tablist">
+                <li data-tab="item" role="presentation">
+                  <button role="tab" class="p-index-team__tab" aria-selected="true" aria-controls="tab-1"
+                    data-tab="button">Investment Team</button>
+                </li>
+                <li data-tab="item" role="presentation">
+                  <button role="tab" class="p-index-team__tab" aria-selected="false" aria-controls="tab-2"
+                    data-tab="button">Special Value Creation Team</button>
+                </li>
+                <li data-tab="item" role="presentation">
+                  <button role="tab" class="p-index-team__tab" aria-selected="false" aria-controls="tab-3"
+                    data-tab="button">CEO Office</button>
+                </li>
+                <li data-tab="item" role="presentation">
+                  <button role="tab" class="p-index-team__tab" aria-selected="false" aria-controls="tab-4"
+                    data-tab="button">Corporate Team</button>
+                </li>
+                <li data-tab="item" role="presentation">
+                  <button role="tab" class="p-index-team__tab" aria-selected="false" aria-controls="tab-5"
+                    data-tab="button">Board Members</button>
+                </li>
+                <li data-tab="item" role="presentation">
+                  <button role="tab" class="p-index-team__tab" aria-selected="false" aria-controls="tab-6"
+                    data-tab="button">Advisors</button>
+                </li>
+              </ul>
+              <div class="p-index-team__body">
+                <!-- Investment Teamここから -->
+                <div id="tab-1" class="c-tab__content c-tab__content--hidden" aria-hidden="false">
+                  <div class="p-index-team__carousel" data-carousel="member">
+                    <div class="swiper">
+                      <ul class="swiper-wrapper">
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">Chief Executive Officer<br> (Founder)</p>
+                            <p class="c-card-member__name">Hiroyuki Otsuka</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="../img/index/pic_otsuka.jpg" alt="Hiroyuki Otsuka" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">Chairman</p>
+                            <p class="c-card-member__name">Shoichi Nagamatsu</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="Shoichi Nagamatsu" width="240"
+                                height="300" decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">Partner</p>
+                            <p class="c-card-member__name">Tom Noda</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="Tom Noda" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="p-index-team__carousel-prev swiper-button-prev">
+                      <img src="../img/common/icon_carousel-button-prev.svg" alt="" width="32" height="84"
+                        decoding="async">
+                    </div>
+                    <div class="p-index-team__carousel-next swiper-button-next">
+                      <img src="../img/common/icon_carousel-button-next.svg" alt="" width="32" height="84"
+                        decoding="async">
+                    </div>
+                  </div>
+                </div>
+                <!-- Investment Teamここまで -->
+                <!-- Special Value Creation Teamここから -->
+                <div id="tab-2" class="c-tab__content c-tab__content--hidden" aria-hidden="true">
+                  <div class="p-index-team__carousel" data-carousel="member">
+                    <div class="swiper">
+                      <ul class="swiper-wrapper">
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="p-index-team__carousel-prev swiper-button-prev">
+                      <img src="../img/common/icon_carousel-button-prev.svg" alt="" width="32" height="84"
+                        decoding="async">
+                    </div>
+                    <div class="p-index-team__carousel-next swiper-button-next">
+                      <img src="../img/common/icon_carousel-button-next.svg" alt="" width="32" height="84"
+                        decoding="async">
+                    </div>
+                  </div>
+                </div>
+                <!-- Special Value Creation Teamここまで -->
+                <!-- CEO Officeここから -->
+                <div id="tab-3" class="c-tab__content c-tab__content--hidden" aria-hidden="true">
+                  <div class="p-index-team__carousel" data-carousel="member">
+                    <div class="swiper">
+                      <ul class="swiper-wrapper">
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="p-index-team__carousel-prev swiper-button-prev">
+                      <img src="../img/common/icon_carousel-button-prev.svg" alt="" width="32" height="84"
+                        decoding="async">
+                    </div>
+                    <div class="p-index-team__carousel-next swiper-button-next">
+                      <img src="../img/common/icon_carousel-button-next.svg" alt="" width="32" height="84"
+                        decoding="async">
+                    </div>
+                  </div>
+                </div>
+                <!-- CEO Officeここまで -->
+                <!-- Corporate Teamここから -->
+                <div id="tab-4" class="c-tab__content c-tab__content--hidden" aria-hidden="true">
+                  <div class="p-index-team__carousel" data-carousel="member">
+                    <div class="swiper">
+                      <ul class="swiper-wrapper">
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="p-index-team__carousel-prev swiper-button-prev">
+                      <img src="../img/common/icon_carousel-button-prev.svg" alt="" width="32" height="84"
+                        decoding="async">
+                    </div>
+                    <div class="p-index-team__carousel-next swiper-button-next">
+                      <img src="../img/common/icon_carousel-button-next.svg" alt="" width="32" height="84"
+                        decoding="async">
+                    </div>
+                  </div>
+                </div>
+                <!-- Corporate Teamここまで -->
+                <!-- Board Membersここから -->
+                <div id="tab-5" class="c-tab__content c-tab__content--hidden" aria-hidden="true">
+                  <div class="p-index-team__carousel" data-carousel="member">
+                    <div class="swiper">
+                      <ul class="swiper-wrapper">
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="p-index-team__carousel-prev swiper-button-prev">
+                      <img src="../img/common/icon_carousel-button-prev.svg" alt="" width="32" height="84"
+                        decoding="async">
+                    </div>
+                    <div class="p-index-team__carousel-next swiper-button-next">
+                      <img src="../img/common/icon_carousel-button-next.svg" alt="" width="32" height="84"
+                        decoding="async">
+                    </div>
+                  </div>
+                </div>
+                <!-- Board Membersここまで -->
+                <!-- Advisorsここから -->
+                <div id="tab-6" class="c-tab__content c-tab__content--hidden" aria-hidden="true">
+                  <div class="p-index-team__carousel" data-carousel="member">
+                    <div class="swiper">
+                      <ul class="swiper-wrapper">
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                        <li class="p-index-team__carousel-slide swiper-slide">
+                          <a href="/" class="c-card-member">
+                            <p class="c-card-member__role">役職</p>
+                            <p class="c-card-member__name">氏名</p>
+                            <figure class="c-card-member__img c-shadow-item">
+                              <img src="https://placehold.jp/240x300.png" alt="氏名" width="240" height="300"
+                                decoding="async">
+                            </figure>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="p-index-team__carousel-prev swiper-button-prev">
+                      <img src="../img/common/icon_carousel-button-prev.svg" alt="" width="32" height="84"
+                        decoding="async">
+                    </div>
+                    <div class="p-index-team__carousel-next swiper-button-next">
+                      <img src="../img/common/icon_carousel-button-next.svg" alt="" width="32" height="84"
+                        decoding="async">
+                    </div>
+                  </div>
+                </div>
+                <!-- Advisorsここまで -->
+              </div>
+              <div class="p-index-team__button">
+                <a href="../en/team/" class="c-button-arrow c-button-arrow--text-right"><span>read more</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /p-index-team -->
+        <!-- p-index-news -->
+        <section class="p-index-news">
+          <div class="p-index-news__inner l-inner u-fadeInDown" data-scroll-animation>
+            <div class="p-index-news__title">
+              <h2 class="c-section-title"><span>news</span></h2>
+            </div>
+            <ul class="p-index-news__list">
+              <li class="c-news-item">
+                <a href="/" class="c-news-item__link">
+                  <time datetime="2024-01-01" class="c-news-item__date c-date">2024.10.00</time>
+                  <p class="c-news-item__tag c-tag">press</p>
+                  <p class="c-news-item__title"><span>事務所移転のお知らせ</span></p>
+                  <div class="c-news-item__arrow"><span class="c-circle-arrow"></span></div>
+                </a>
+              </li>
+              <li class="c-news-item">
+                <a href="/" class="c-news-item__link">
+                  <time datetime="2024-01-01" class="c-news-item__date c-date">2024.10.00</time>
+                  <p class="c-news-item__tag c-tag">MEDIA</p>
+                  <p class="c-news-item__title"><span>Nikkei Financialにジャパン・アクティベーション・キャピタルが取り上げられました…</span></p>
+                  <div class="c-news-item__arrow"><span class="c-circle-arrow"></span></div>
+                </a>
+              </li>
+              <li class="c-news-item">
+                <a href="/" class="c-news-item__link">
+                  <time datetime="2024-01-01" class="c-news-item__date c-date">2024.10.00</time>
+                  <p class="c-news-item__tag c-tag">MEDIA</p>
+                  <p class="c-news-item__title">
+                    <span>テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。テキストが長い場合。</span>
+                  </p>
+                  <div class="c-news-item__arrow"><span class="c-circle-arrow"></span></div>
+                </a>
+              </li>
+            </ul>
+            <div class="p-index-news__button">
+              <a href="../en/news/" class="c-button-arrow c-button-arrow--text-right"><span>read more</span></a>
+            </div>
+          </div>
+        </section>
+        <!-- /p-index-news -->
+        <!-- p-index-office -->
+        <section id="office" class="p-index-office">
+          <div class="p-index-office__inner l-inner u-fadeInDown" data-scroll-animation>
+            <h2 class="c-section-title c-section-title--reverse"><span>office</span></h2>
+            <p class="p-index-office__lead">JAPAN ACTIVATION CAPITALはジャパン・アクティベーション・キャピタル株式会社が運営・管理を行うファンドです。</p>
+            <dl class="p-index-office__list">
+              <div class="p-index-office__item">
+                <dt class="p-index-office__label">Company</dt>
+                <dd class="p-index-office__text">Japan Activation Capital, Inc.</dd>
+              </div>
+              <div class="p-index-office__item">
+                <dt class="p-index-office__label">Chief Executive Officer <br>(Founder)</dt>
+                <dd class="p-index-office__text">Hiroyuki Otsuka</dd>
+              </div>
+              <div class="p-index-office__item">
+                <dt class="p-index-office__label">Business</dt>
+                <dd class="p-index-office__text">Discretionary Investment Management and Type II Financial Instruments
+                  Business</dd>
+              </div>
+              <div class="p-index-office__item">
+                <dt class="p-index-office__label">Address</dt>
+                <dd class="p-index-office__text">POLA Aoyama Building 11F, 2-5-17, Minami-Aoyama, Minato-ku, Tokyo
+                  107-0062, Japan</dd>
+              </div>
+              <div class="p-index-office__item">
+                <dt class="p-index-office__label">Contact</dt>
+                <dd class="p-index-office__text">contact@japanactivationcapital.com</dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+        <!-- /p-index-office -->
+        <!-- p-index-contact -->
+        <section id="contact" class="p-index-contact">
+          <div class="p-index-contact__inner l-inner u-fadeInDown" data-scroll-animation>
+            <h2 class="c-section-title c-section-title--white"><span>contact</span></h2>
+            <div class="p-index-contact__cols">
+              <div class="p-index-contact__col">
+                <p class="p-index-contact__sub-title">CONTACT US</p>
+                <div class="p-index-contact__texts">
+                  <p class="p-index-contact__text">ビジネスに関するお問い合わせはこちら</p>
+                  <p class="p-index-contact__text"><a
+                      href="mailto:contact@japanactivationcapital.com">contact@japanactivationcapital.com</a></p>
+                </div>
+              </div>
+              <div class="p-index-contact__col">
+                <p class="p-index-contact__sub-title">PR AGENT</p>
+                <div class="p-index-contact__texts">
+                  <p class="p-index-contact__text">報道関係についての<br class="u-mobile">お問い合わせはこちら</p>
+                  <p class="p-index-contact__text"><a
+                      href="mailto:contact@japanactivationcapital.com">contact@japanactivationcapital.com</a></p>
+                  <p class="p-index-contact__text p-index-contact__text--mt"><span>担当者：Kskst
+                      CNC<br class="u-mobile">大谷みな子/アンドリュー・マンデル</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /p-index-contact -->
+      </div>
+    </main>
+    <!-- l-footer -->
+    <footer class="l-footer">
+      <div class="l-footer__inner l-inner">
+        <nav class="l-footer__nav">
+          <ul class="l-footer__nav-list">
+            <li class="l-footer__nav-item"><a href="../en/terms/">Terms of Use</a></li>
+            <li class="l-footer__nav-item"><a href="../en/privacy/">Privacy Policy</a></li>
+            <li class="l-footer__nav-item"><a href="../en/antisocial/">反社ポリシー</a></li>
+            <li class="l-footer__nav-item"><a href="../en/esg/">ESGポリシー</a></li>
+          </ul>
+        </nav>
+        <small class="l-footer__copy">©2024 JAPAN ACTIVATION CAPITAL</small>
+      </div>
+    </footer>
+    <!-- /l-footer -->
+  </div>
+</body>
+
+</html>

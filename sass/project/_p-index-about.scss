@@ -43,3 +43,8 @@
     line-height: 1.75em;
   }
 }
+
+// 英語
+html[lang="en"] .p-index-about__lead {
+  letter-spacing: 0.05em;
+}

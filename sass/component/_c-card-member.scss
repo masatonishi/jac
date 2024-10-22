@@ -46,3 +46,9 @@
     font-size: 22px;
   }
 }
+
+// 英語
+html[lang="en"] .c-card-member__role,
+html[lang="en"] .c-card-member__name {
+  letter-spacing: 0.1em;
+}

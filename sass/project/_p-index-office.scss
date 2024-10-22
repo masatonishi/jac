@@ -55,3 +55,8 @@
     line-height: 1.75;
   }
 }
+
+// 英語
+html[lang="en"] .p-index-office__text {
+  letter-spacing: 0.05em;
+}

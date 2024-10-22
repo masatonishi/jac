@@ -734,6 +734,11 @@ html[lang=en] .c-text-list::before {
   }
 }
 
+html[lang=en] .c-card-member__role,
+html[lang=en] .c-card-member__name {
+  letter-spacing: 0.1em;
+}
+
 .c-pagination {
   --_theme-font-color: #b3b3b3;
   display: flex;
@@ -1206,6 +1211,10 @@ body.is-drawerActive .p-global-menu__overlay {
   }
 }
 
+html[lang=en] .p-index-about__lead {
+  letter-spacing: 0.05em;
+}
+
 .p-index-contact {
   color: var(--c-text-white);
   background-color: var(--c-primary);
@@ -1390,6 +1399,10 @@ body.is-drawerActive .p-global-menu__overlay {
   }
 }
 
+html[lang=en] .p-index-office__text {
+  letter-spacing: 0.05em;
+}
+
 .p-index-news {
   background-color: #dde8ff;
   padding: 120px 0 80px;
@@ -1511,10 +1524,10 @@ body.is-drawerActive .p-global-menu__overlay {
 }
 @media screen and (min-width: 768px) {
   .p-index-strategy__number {
-    padding-top: 5px;
+    padding-top: 12px;
     font-size: 14px;
     grid-area: number;
-    align-self: center;
+    align-self: start;
   }
 }
 
