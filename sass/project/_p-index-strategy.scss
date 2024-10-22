@@ -29,11 +29,12 @@
       "number . header . body" auto
       ". . . . body" 1fr
       / auto 42fr 328fr 94fr 639fr;
+    padding-bottom: 50px;
   }
 }
 
 .p-index-strategy__item:not(:last-of-type) {
-  border-bottom: 1px solid var(--c-base);
+  border-bottom: 1px solid rgb(255 255 255 / 0.5);
 }
 
 .p-index-strategy__number {
@@ -45,7 +46,7 @@
   color: var(--c-text-white);
 
   @include mq(md) {
-    padding-top: 12px;
+    padding-top: 10px;
     font-size: 14px;
     grid-area: number;
     align-self: start;

@@ -90,7 +90,7 @@
   row-gap: 15px;
 
   @include mq(md) {
-    row-gap: 30px;
+    row-gap: 26px;
   }
 }
 
@@ -99,7 +99,7 @@
   font-family: var(--second-font);
   font-style: italic;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.5;
   text-transform: uppercase;
   letter-spacing: 0;
@@ -122,11 +122,12 @@
 }
 
 .p-global-menu__sub-item a {
-  display: inline-block;
+  display: block;
   font-weight: 700;
   font-size: 12px;
 
   @include mq(md) {
+    display: inline-block;
     font-size: 14px;
   }
 }

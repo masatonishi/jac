@@ -111,13 +111,13 @@
 
 .p-index-message__foot {
   position: absolute;
-  bottom: -87px;
+  bottom: max(-87px, calc(-87 / 390 * 100vw));
   width: 100%;
-  height: 300px;
+  height: calc(300 / 390 * 100vw);
   z-index: 0;
 
   @include mq(md) {
-    height: 470px;
+    height: calc(470 / 1440 * 100vw);
     bottom: -120px;
   }
 }

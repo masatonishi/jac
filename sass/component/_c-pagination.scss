@@ -4,6 +4,7 @@
   --_theme-font-color: #b3b3b3;
   display: flex;
   justify-content: center;
+  column-gap: 10px;
 
   @include mq(md) {
     column-gap: 3px;

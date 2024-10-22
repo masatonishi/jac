@@ -17,7 +17,7 @@
   position: relative;
 
   @include mq(md) {
-    font-size: 100px;
+    font-size: min(100px, calc(100 / 1190 * 100vw));
   }
 }
 
@@ -50,6 +50,6 @@
   font-size: 40px;
 
   @include mq(md) {
-    font-size: 100px;
+    font-size: min(100px, calc(100 / 1190 * 100vw));
   }
 }

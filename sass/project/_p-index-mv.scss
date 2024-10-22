@@ -35,7 +35,7 @@
   width: 155px;
 
   @include mq(md) {
-    width: 260px;
+    width: min(260px, calc(260 / 1190 * 100vw));
     position: absolute;
     top: min(90px, calc(90 / 1190 * 100vw));
     left: min(100px, calc(100 / 1190 * 100vw));

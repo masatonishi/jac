@@ -30,7 +30,7 @@
   }
 }
 
-.p-index-mission__ltem {
+.p-index-mission__item {
   display: grid;
   padding: 55px 0;
   border-top: 1px solid var(--c-primary);
@@ -44,13 +44,13 @@
   }
 }
 
-.p-index-mission__ltem:first-of-type {
+.p-index-mission__item:first-of-type {
   @include mq(md) {
     border-right: 1px solid var(--c-primary);
   }
 }
 
-.p-index-mission__ltem:last-of-type {
+.p-index-mission__item:last-of-type {
   padding-bottom: 0;
 
   @include mq(md) {
@@ -120,5 +120,18 @@
 
   @include mq(md) {
     margin: 30px auto 0;
+  }
+}
+
+// 英語
+html[lang="en"] .p-index-mission__lead {
+  @include mq(md) {
+    max-width: 660px;
+  }
+}
+
+html[lang="en"] .p-index-mission__item {
+  @include mq(md) {
+    padding: 0 min(30px, calc(30 / 1190 * 100vw)) 25px;
   }
 }

@@ -104,7 +104,7 @@ window.addEventListener("load", () => {
   scrollElms.forEach((scrollElm) => {
     ScrollTrigger.create({
       trigger: scrollElm,
-      start: "top 85%",
+      start: "top 90%",
       toggleClass: {
         targets: scrollElm,
         className: "is-active",
