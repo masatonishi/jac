@@ -90,6 +90,11 @@
   height: auto;
 }
 
+.p-index-team__carousel-prev::after,
+.p-index-team__carousel-next::after {
+  display: none;
+}
+
 .p-index-team__carousel-prev {
   left: var(--_x);
 

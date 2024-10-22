@@ -25,8 +25,11 @@ body.is-loaded .l-index__mask {
 }
 
 .l-index__wrapper {
-  margin-top: var(--mv-height);
   background-color: var(--c-base);
   position: relative;
   z-index: 2;
+
+  @include mq(md) {
+    margin-top: var(--mv-height);
+  }
 }

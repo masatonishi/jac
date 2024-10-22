@@ -87,8 +87,15 @@
   }
 }
 
-.p-index-mission__title {
+.p-index-mission__title-wrapper {
   margin-top: 20px;
+
+  @include mq(md) {
+    margin-top: 15px;
+  }
+}
+
+.p-index-mission__title {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
@@ -96,7 +103,6 @@
   color: var(--c-primary);
 
   @include mq(md) {
-    margin-top: 15px;
     line-height: 1.5;
     align-self: center;
   }
