@@ -49,6 +49,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     globalMenu.setAttribute("aria-hidden", "true");
   });
+
+  // メニュークリックでナビゲーションを閉じる
+  const spNavLinks = globalMenu.querySelectorAll(
+    ".p-global-menu__nav-item a[href]"
+  );
+  spNavLinks.forEach(function (spNavLink) {
+    spNavLink.addEventListener("click", function () {
+      hamburgerButtons.forEach((button) => {
+        button.click();
+      });
+    });
+  });
 });
 
 // タブ
@@ -93,3 +105,36 @@ document.addEventListener("DOMContentLoaded", function () {
     activePanel.setAttribute("aria-hidden", "true");
   }
 });
+
+// スムーススクロール
+$(function () {
+  $('a[href*="#"]').click(function (e) {
+    const target = $(this.hash === "" ? "html" : this.hash);
+    if (target.length) {
+      e.preventDefault();
+      const position = target.offset().top - 20;
+      $("html, body").animate({ scrollTop: position }, 500, "swing");
+
+      if (!target.is("html")) {
+        history.pushState(null, "", this.hash);
+      }
+    }
+  });
+});
+
+// 別ページ遷移後のスムーススクロール
+const urlHash = location.hash;
+if (urlHash) {
+  const target = $(urlHash);
+  if (target.length) {
+    history.replaceState(null, "", window.location.pathname);
+    $("html,body").stop().scrollTop(0);
+
+    $(window).on("load", function () {
+      const position = target.offset().top - 20;
+      $("html, body").animate({ scrollTop: position }, 500, "swing");
+
+      history.replaceState(null, "", window.location.pathname + urlHash);
+    });
+  }
+}
