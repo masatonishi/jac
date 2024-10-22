@@ -986,11 +986,6 @@ body.is-loaded .l-index__mask {
   position: relative;
   z-index: 2;
 }
-@media screen and (min-width: 768px) {
-  .l-index__wrapper {
-    margin-top: var(--mv-height);
-  }
-}
 
 .l-subpage {
   margin-top: 60px;
@@ -1858,16 +1853,15 @@ html[lang=en] .p-index-office__text {
 .p-index-mv {
   height: 100svh;
   min-height: 420px;
-  position: relative;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .p-index-mv {
     min-height: 500px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
   }
 }
 

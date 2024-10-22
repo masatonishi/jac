@@ -3,15 +3,15 @@
 .p-index-mv {
   height: 100svh;
   min-height: 420px;
-  position: relative;
+  // position: relative;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
 
   @include mq(md) {
     min-height: 500px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
   }
 }
 

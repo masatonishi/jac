@@ -29,7 +29,7 @@ body.is-loaded .l-index__mask {
   position: relative;
   z-index: 2;
 
-  @include mq(md) {
-    margin-top: var(--mv-height);
-  }
+  // @include mq(md) {
+  //   margin-top: var(--mv-height);
+  // }
 }
