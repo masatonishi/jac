@@ -1,0 +1,27 @@
+@use "../global" as *;
+
+// u-fadeInDown
+.u-fadeInDown {
+  opacity: 0;
+  transform: translate3d(0, -20px, 0);
+  transition-duration: 1s;
+  transition-delay: 0.25s;
+}
+
+.u-fadeInDown.is-active {
+  opacity: 1;
+  transform: none;
+}
+
+// u-fadeInUp
+.u-fadeInUp {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  transition-duration: 1s;
+  transition-delay: 0.25s;
+}
+
+.u-fadeInUp.is-active {
+  opacity: 1;
+  transform: none;
+}

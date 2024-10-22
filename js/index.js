@@ -97,3 +97,19 @@ for (const item of items) {
     }
   );
 }
+
+// スクロールアニメーション
+window.addEventListener("load", () => {
+  const scrollElms = document.querySelectorAll("[data-scroll-animation]");
+  scrollElms.forEach((scrollElm) => {
+    ScrollTrigger.create({
+      trigger: scrollElm,
+      start: "top 85%",
+      toggleClass: {
+        targets: scrollElm,
+        className: "is-active",
+      },
+      once: true,
+    });
+  });
+});

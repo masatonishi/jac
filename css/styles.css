@@ -2732,3 +2732,27 @@ html[lang=en] .p-sub-page-body__items {
 .u-palt {
   font-feature-settings: "palt";
 }
+
+.u-fadeInDown {
+  opacity: 0;
+  transform: translate3d(0, -20px, 0);
+  transition-duration: 1s;
+  transition-delay: 0.25s;
+}
+
+.u-fadeInDown.is-active {
+  opacity: 1;
+  transform: none;
+}
+
+.u-fadeInUp {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  transition-duration: 1s;
+  transition-delay: 0.25s;
+}
+
+.u-fadeInUp.is-active {
+  opacity: 1;
+  transform: none;
+}
