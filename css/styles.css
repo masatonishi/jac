@@ -674,6 +674,11 @@ html[lang=en] .c-text-list::before {
 }
 
 .c-tab__content[aria-hidden=true] {
+  display: none;
+}
+
+.c-tab__content--hidden[aria-hidden=true] {
+  display: block;
   visibility: hidden;
   opacity: 0;
   height: 0;
@@ -936,6 +941,13 @@ html[lang=en] .c-text-list::before {
 
 .l-wrapper {
   overflow-x: clip;
+  display: grid;
+  grid-template-columns: minmax(0, auto);
+  grid-template-rows: auto 1fr auto;
+}
+
+.l-main {
+  min-height: 100svh;
 }
 
 .l-subpage {

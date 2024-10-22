@@ -8,6 +8,13 @@ body.is-drawerActive {
 
 .l-wrapper {
   overflow-x: clip;
+  display: grid;
+  grid-template-columns: minmax(0, auto);
+  grid-template-rows: auto 1fr auto;
+}
+
+.l-main {
+  min-height: 100svh;
 }
 
 .l-main > * {
