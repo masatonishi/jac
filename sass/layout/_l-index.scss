@@ -1,5 +1,29 @@
 @use "../global" as *;
 
+.l-index__mask {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--c-base);
+  inset: 0;
+  z-index: var(--z-index-overlay);
+  pointer-events: none;
+}
+
+body.is-loaded .l-index__mask {
+  animation: loading 1s ease forwards;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .l-index__wrapper {
   margin-top: var(--mv-height);
   background-color: var(--c-base);
