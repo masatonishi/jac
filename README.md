@@ -98,7 +98,7 @@ sass フォルダは以下の定義で運用する：
 - global：グローバルに使用する関数や変数
   - functions：関数を定義
   - mixin：mixin を定義
-  - variables：グローバル変数を定義
+  - variables：変数を定義
 - layout：サイトの大枠となる全ページ共通要素のスタイル
 - component：複数のページで使われている共通パーツ
   - 3 回以上使い回すパーツは積極的に component 化する。
