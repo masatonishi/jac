@@ -6,6 +6,7 @@
 
 .p-index-bg__img {
   height: 200px;
+  overflow: hidden;
 
   @include mq(md) {
     height: max(400px, calc(400 / 1440 * 100vw));

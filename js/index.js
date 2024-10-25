@@ -74,7 +74,7 @@ const items = document.querySelectorAll("[data-parallax]");
 for (const item of items) {
   const y = item.getAttribute("data-y") ?? "5%";
   const scale = item.getAttribute("data-scale") ?? "1.1";
-  const delay = parseFloat(item.getAttribute("data-delay")) || 1.5;
+  const delay = 0;
   const img = item.querySelector("img");
 
   gsap.set(item, { overflow: "hidden" });
@@ -93,7 +93,7 @@ for (const item of items) {
         end: "bottom top",
         scrub: delay,
       },
-      ease: "none",
+      ease: "linear",
     }
   );
 }
