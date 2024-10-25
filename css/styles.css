@@ -700,6 +700,18 @@ html[lang=en] .c-text-list::before {
   font-weight: 700;
 }
 
+.c-card-member__team {
+  margin-top: 15px;
+  font-family: var(--second-font);
+  font-style: italic;
+  font-weight: 300;
+}
+@media screen and (min-width: 768px) {
+  .c-card-member__team {
+    margin-top: 20px;
+  }
+}
+
 .c-card-member__img {
   order: -1;
 }
