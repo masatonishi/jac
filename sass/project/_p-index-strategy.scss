@@ -1,14 +1,14 @@
 @use "../global" as *;
 
 .p-index-strategy {
-  background-image: url(../img/index/bg_strategy.png);
+  background-image: url(../img/index/bg_strategy.png?2);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 120px 0 52px;
   background-color: var(--c-base);
 
   @include mq(md) {
-    background-image: url(../img/index/bg_strategy_pc.png);
+    background-image: url(../img/index/bg_strategy_pc.png?2);
     padding: 190px 0 125px;
   }
 }

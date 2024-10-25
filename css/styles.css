@@ -688,7 +688,6 @@ html[lang=en] .c-text-list::before {
 .c-card-member {
   display: grid;
   color: var(--c-primary);
-  text-align: center;
 }
 
 .c-card-member__role {
@@ -1485,7 +1484,7 @@ html[lang=en] .p-index-office__text {
 }
 
 .p-index-strategy {
-  background-image: url(../img/index/bg_strategy.png);
+  background-image: url(../img/index/bg_strategy.png?2);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 120px 0 52px;
@@ -1493,7 +1492,7 @@ html[lang=en] .p-index-office__text {
 }
 @media screen and (min-width: 768px) {
   .p-index-strategy {
-    background-image: url(../img/index/bg_strategy_pc.png);
+    background-image: url(../img/index/bg_strategy_pc.png?2);
     padding: 190px 0 125px;
   }
 }
