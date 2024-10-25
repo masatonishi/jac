@@ -562,7 +562,6 @@ html[lang=en] .c-text-list::before {
   display: inline-block;
   font-family: var(--second-font);
   font-size: 14px;
-  font-weight: 300;
   text-transform: uppercase;
   color: var(--_theme-font-color);
   padding: 10px;
