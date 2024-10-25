@@ -2376,27 +2376,23 @@ html[lang=en] .p-index-office__text {
 }
 
 .p-index-team__carousel-prev {
-  left: auto;
-  right: var(--_x);
-  transform: scale(-1, 1);
+  left: var(--_x);
 }
 @media screen and (min-width: 768px) {
   .p-index-team__carousel-prev {
-    display: none;
+    right: auto;
+    top: 50%;
+    left: -80px;
+    transform: translateY(calc(-50% - 10px));
   }
 }
 
 .p-index-team__carousel-next {
-  right: auto;
-  left: var(--_x);
-  transform: scale(-1, 1);
+  right: var(--_x);
 }
 @media screen and (min-width: 768px) {
   .p-index-team__carousel-next {
-    right: auto;
-    top: 50%;
-    left: -80px;
-    transform: translateY(calc(-50% - 10px)) scale(-1, 1);
+    display: none;
   }
 }
 

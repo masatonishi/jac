@@ -96,25 +96,21 @@
 }
 
 .p-index-team__carousel-prev {
-  left: auto;
-  right: var(--_x);
-  transform: scale(-1, 1);
-
-  @include mq(md) {
-    display: none;
-  }
-}
-
-.p-index-team__carousel-next {
-  right: auto;
   left: var(--_x);
-  transform: scale(-1, 1);
 
   @include mq(md) {
     right: auto;
     top: 50%;
     left: -80px;
-    transform: translateY(calc(-50% - 10px)) scale(-1, 1);
+    transform: translateY(calc(-50% - 10px));
+  }
+}
+
+.p-index-team__carousel-next {
+  right: var(--_x);
+
+  @include mq(md) {
+    display: none;
   }
 }
 
