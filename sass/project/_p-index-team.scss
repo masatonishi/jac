@@ -96,7 +96,9 @@
 }
 
 .p-index-team__carousel-prev {
-  left: var(--_x);
+  left: auto;
+  right: var(--_x);
+  transform: scale(-1, 1);
 
   @include mq(md) {
     display: none;
@@ -104,7 +106,9 @@
 }
 
 .p-index-team__carousel-next {
-  right: var(--_x);
+  right: auto;
+  left: var(--_x);
+  transform: scale(-1, 1);
 
   @include mq(md) {
     right: auto;
