@@ -128,3 +128,10 @@
   object-fit: cover;
   object-position: bottom;
 }
+
+// 英語
+html[lang="en"] .p-index-message__bg img {
+  @include mq(md) {
+    object-fit: cover;
+  }
+}

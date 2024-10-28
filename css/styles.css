@@ -1859,6 +1859,13 @@ html[lang=en] .p-index-office__text {
      object-position: bottom;
 }
 
+@media screen and (min-width: 768px) {
+  html[lang=en] .p-index-message__bg img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .p-index-mv {
   height: 100svh;
   min-height: 420px;
