@@ -29,8 +29,28 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", getMvHeight);
 });
 
-// Teamセクションスライダー
+// スライダー
 document.addEventListener("DOMContentLoaded", function () {
+  // Missionセクション
+  const missionCarousel = new Swiper('[data-carousel="mission"]', {
+    loop: true,
+    spaceBetween: 10,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    speed: 1500,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  // Teamセクション
   const teamSliderWrappers = document.querySelectorAll(
     '[data-carousel="member"]'
   );
