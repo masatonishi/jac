@@ -59,36 +59,30 @@
 .p-index-mv__texts {
   font-family: var(--second-font);
   color: var(--c-text-white);
-  letter-spacing: 0;
+  padding: 0 20px;
   position: absolute;
-  bottom: -20px;
+  top: 140px;
 
   @include mq(md) {
-    bottom: min(-32px, calc(-32 / 1150 * 100vw));
-    padding-left: 10px;
-  }
-}
-
-.p-index-mv__sub-text {
-  font-weight: 300;
-  font-size: 14px;
-  padding: 0 0 15px 20px;
-
-  @include mq(md) {
-    font-size: max(24px, calc(24 / 1440 * 100vw));
-    padding: 0 0 min(78px, calc(78 / 1190 * 100vw))
-      min(90px, calc(90 / 1190 * 100vw));
+    top: auto;
+    bottom: max(55px, calc(55 / 1190 * 100vw));
+    padding: 0 70px;
   }
 }
 
 .p-index-mv__main-text {
   font-style: italic;
   font-weight: 600;
-  font-size: 82px;
-  line-height: 1;
+  font-size: max(24px, calc(24 / 390 * 100vw));
+  letter-spacing: -0.02em;
 
   @include mq(md) {
-    font-size: max(125px, calc(125 / 1440 * 100vw));
+    font-size: max(42px, calc(42 / 1440 * 100vw));
+    line-height: 1.229;
+  }
+
+  @include mq(lg) {
+    font-size: max(48px, calc(48 / 1440 * 100vw));
   }
 }
 
