@@ -2381,7 +2381,9 @@ html[lang=en] .p-index-office__text {
 }
 
 .p-index-team__list-wrapper {
-  overflow-x: scroll;
+  position: relative;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
   .p-index-team__list-wrapper {
@@ -2723,6 +2725,35 @@ html[lang=en] .p-sub-page-body__items {
   .p-entry-news__button {
     width: 140px;
   }
+}
+
+.scroll-hint {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.4;
+  display: none;
+  animation: scroll-hint-animation 2s infinite ease;
+}
+
+@keyframes scroll-hint-animation {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-40%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+.scroll-hint--show {
+  display: block;
 }
 
 .u-hidden {

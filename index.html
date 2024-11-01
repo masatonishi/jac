@@ -29,9 +29,12 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
     rel="stylesheet">
+  <!-- スクロールヒント -->
+  <link rel="stylesheet" href="https://unpkg.com/scroll-hint@1.1.10/css/scroll-hint.css">
+  <script src="https://unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js"></script>
   <!-- css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/styles.css?10">
+  <link rel="stylesheet" href="./css/styles.css?11">
   <!-- JavaScript -->
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.7.0/dist/gsap.min.js"></script>
@@ -40,7 +43,7 @@
     src="//cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
   <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script type="module" src="./js/script.js?2"></script>
-  <script type="module" src="./js/index.js?4"></script>
+  <script type="module" src="./js/index.js?5"></script>
 </head>
 
 <body class="l-index">
@@ -683,7 +686,7 @@
                 <!-- Board Membersここまで -->
                 <!-- Advisorsここから -->
                 <div id="tab-6" class="c-tab__content c-tab__content--hidden" aria-hidden="true">
-                  <div class="p-index-team__list-wrapper" data-team-list>
+                  <div class="p-index-team__list-wrapper js-scrollable" data-team-list>
                     <ul class="p-index-team__list">
                       <li class="p-index-team__item">
                         <a href="/" class="c-card-member">

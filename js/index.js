@@ -110,7 +110,35 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       if (itemLength < 3) {
         teamList.classList.add("is-not-scrollable");
+      } else {
       }
     }
   });
+});
+
+// スクロールヒント
+document.addEventListener("DOMContentLoaded", () => {
+  const tableContainers = document.querySelectorAll("[data-team-list]");
+
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    for (const tableContainer of tableContainers) {
+      const scrollHint = document.createElement("div");
+      scrollHint.className = "scroll-hint scroll-hint--show";
+      scrollHint.innerText = "横にスクロールできます";
+      tableContainer.appendChild(scrollHint);
+
+      const showScrollHint = () => {
+        if (tableContainer.scrollWidth > tableContainer.clientWidth) {
+          scrollHint.classList.add("scroll-hint--show");
+        } else {
+          scrollHint.classList.remove("scroll-hint--show");
+        }
+      };
+      showScrollHint();
+
+      tableContainer.addEventListener("scroll", () => {
+        scrollHint.classList.remove("scroll-hint--show");
+      });
+    }
+  }
 });

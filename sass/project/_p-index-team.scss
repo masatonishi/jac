@@ -75,7 +75,9 @@
 }
 
 .p-index-team__list-wrapper {
-  overflow-x: scroll;
+  position: relative;
+  overflow-x: auto;
+  white-space: nowrap;
 
   @include mq(md) {
     width: calc(780 / 1440 * 100vw);
