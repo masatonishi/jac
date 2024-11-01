@@ -119,12 +119,15 @@ document.addEventListener("DOMContentLoaded", function () {
 // スクロールヒント
 document.addEventListener("DOMContentLoaded", () => {
   const tableContainers = document.querySelectorAll("[data-team-list]");
+  const isEnglish = document.documentElement.lang === "en";
 
   if (window.matchMedia("(min-width: 768px)").matches) {
     for (const tableContainer of tableContainers) {
       const scrollHint = document.createElement("div");
       scrollHint.className = "scroll-hint scroll-hint--show";
-      scrollHint.innerText = "横にスクロールできます";
+      scrollHint.innerText = isEnglish
+        ? "Can be scrolled horizontally"
+        : "横にスクロールできます";
       tableContainer.appendChild(scrollHint);
 
       const showScrollHint = () => {
