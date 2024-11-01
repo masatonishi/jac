@@ -49,43 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".swiper-button-prev",
     },
   });
-
-  // Teamセクション
-  const teamSliderWrappers = document.querySelectorAll(
-    '[data-carousel="member"]'
-  );
-
-  teamSliderWrappers.forEach((teamSliderWrapper) => {
-    const teamSliderSlides =
-      teamSliderWrapper.querySelectorAll(".swiper-slide");
-
-    function initializeSlider() {
-      return new Swiper(teamSliderWrapper.querySelector(".swiper"), {
-        spaceBetween: 40,
-        slidesPerView: "auto",
-        breakpoints: {
-          768: {
-            centeredSlides: false,
-          },
-        },
-        centeredSlides: true,
-        loop: true,
-        navigation: {
-          nextEl: teamSliderWrapper.querySelector(".swiper-button-next"),
-          prevEl: teamSliderWrapper.querySelector(".swiper-button-prev"),
-        },
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        speed: 1500,
-        observer: true,
-        observeParents: true,
-      });
-    }
-
-    initializeSlider();
-  });
 });
 
 // パララックス
@@ -131,5 +94,23 @@ window.addEventListener("load", () => {
       },
       once: true,
     });
+  });
+});
+
+// Teamメンバーの枚数を取得して、スクロールバーの表示を制御
+document.addEventListener("DOMContentLoaded", function () {
+  const teamLists = document.querySelectorAll("[data-team-list]");
+  teamLists.forEach((teamList) => {
+    const itemLength = teamList.querySelectorAll(".p-index-team__item").length;
+
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      if (itemLength < 2) {
+        teamList.classList.add("is-not-scrollable");
+      }
+    } else {
+      if (itemLength < 3) {
+        teamList.classList.add("is-not-scrollable");
+      }
+    }
   });
 });

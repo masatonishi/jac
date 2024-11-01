@@ -65,64 +65,45 @@
 }
 
 .p-index-team__body {
-  margin: 45px calc(50% - 50vw) 0;
+  margin: 45px calc(50% - 50vw) 0 0;
+  width: 100vw;
 
   @include mq(md) {
     grid-area: body;
     margin: 0 calc(50% - 50vw) 0 0;
-    width: 100vw;
   }
 }
 
-.p-index-team__carousel {
-  position: relative;
+.p-index-team__list-wrapper {
+  overflow-x: scroll;
+
+  @include mq(md) {
+    width: calc(780 / 1440 * 100vw);
+  }
 }
 
-.p-index-team__carousel-slide {
-  width: 250px;
+.p-index-team__list-wrapper.is-not-scrollable {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.p-index-team__carousel-prev,
-.p-index-team__carousel-next {
-  --_x: calc(50% - 158px);
-  top: 155px;
-  width: auto;
-  height: auto;
-}
-
-.p-index-team__carousel-prev::after,
-.p-index-team__carousel-next::after {
+.p-index-team__list-wrapper.is-not-scrollable::-webkit-scrollbar {
   display: none;
 }
 
-.p-index-team__carousel-prev {
-  left: var(--_x);
+.p-index-team__list {
+  display: flex;
+  column-gap: 38px;
+  width: max-content;
+  padding-right: 80px;
 
   @include mq(md) {
-    right: auto;
-    top: 50%;
-    left: -80px;
-    transform: translateY(calc(-50% - 10px));
+    padding-right: calc(50 / 1440 * 100vw);
   }
 }
 
-.p-index-team__carousel-next {
-  right: var(--_x);
-
-  @include mq(md) {
-    display: none;
-  }
-}
-
-.p-index-team__carousel-prev img,
-.p-index-team__carousel-next img {
-  width: 24px;
-  aspect-ratio: 24 / 53;
-
-  @include mq(md) {
-    width: 38px;
-    aspect-ratio: 38 / 90;
-  }
+.p-index-team__item {
+  width: 250px;
 }
 
 .p-index-team__button {

@@ -19,10 +19,10 @@
   position: absolute;
   top: var(--_position);
   left: var(--_position);
-  z-index: -1;
   border-radius: var(--_rounded) 0 var(--_rounded) 0;
 }
 
 .c-shadow-item img {
   border-radius: var(--_rounded) 0 var(--_rounded) 0;
+  position: relative;
 }

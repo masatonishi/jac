@@ -351,12 +351,12 @@ html[lang=en] .c-text-list::before {
   position: absolute;
   top: var(--_position);
   left: var(--_position);
-  z-index: -1;
   border-radius: var(--_rounded) 0 var(--_rounded) 0;
 }
 
 .c-shadow-item img {
   border-radius: var(--_rounded) 0 var(--_rounded) 0;
+  position: relative;
 }
 
 .c-button-arrow {
@@ -2370,69 +2370,50 @@ html[lang=en] .p-index-office__text {
 }
 
 .p-index-team__body {
-  margin: 45px calc(50% - 50vw) 0;
+  margin: 45px calc(50% - 50vw) 0 0;
+  width: 100vw;
 }
 @media screen and (min-width: 768px) {
   .p-index-team__body {
     grid-area: body;
     margin: 0 calc(50% - 50vw) 0 0;
-    width: 100vw;
   }
 }
 
-.p-index-team__carousel {
-  position: relative;
+.p-index-team__list-wrapper {
+  overflow-x: scroll;
+}
+@media screen and (min-width: 768px) {
+  .p-index-team__list-wrapper {
+    width: 54.1666666667vw;
+  }
 }
 
-.p-index-team__carousel-slide {
-  width: 250px;
+.p-index-team__list-wrapper.is-not-scrollable {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.p-index-team__carousel-prev,
-.p-index-team__carousel-next {
-  --_x: calc(50% - 158px);
-  top: 155px;
-  width: auto;
-  height: auto;
-}
-
-.p-index-team__carousel-prev::after,
-.p-index-team__carousel-next::after {
+.p-index-team__list-wrapper.is-not-scrollable::-webkit-scrollbar {
   display: none;
 }
 
-.p-index-team__carousel-prev {
-  left: var(--_x);
+.p-index-team__list {
+  display: flex;
+  -moz-column-gap: 38px;
+       column-gap: 38px;
+  width: -moz-max-content;
+  width: max-content;
+  padding-right: 80px;
 }
 @media screen and (min-width: 768px) {
-  .p-index-team__carousel-prev {
-    right: auto;
-    top: 50%;
-    left: -80px;
-    transform: translateY(calc(-50% - 10px));
+  .p-index-team__list {
+    padding-right: 3.4722222222vw;
   }
 }
 
-.p-index-team__carousel-next {
-  right: var(--_x);
-}
-@media screen and (min-width: 768px) {
-  .p-index-team__carousel-next {
-    display: none;
-  }
-}
-
-.p-index-team__carousel-prev img,
-.p-index-team__carousel-next img {
-  width: 24px;
-  aspect-ratio: 24/53;
-}
-@media screen and (min-width: 768px) {
-  .p-index-team__carousel-prev img,
-  .p-index-team__carousel-next img {
-    width: 38px;
-    aspect-ratio: 38/90;
-  }
+.p-index-team__item {
+  width: 250px;
 }
 
 .p-index-team__button {
