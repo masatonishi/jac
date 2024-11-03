@@ -686,6 +686,7 @@ html[lang=en] .c-text-list::before {
 
 .c-card-member {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   color: var(--c-primary);
 }
 
