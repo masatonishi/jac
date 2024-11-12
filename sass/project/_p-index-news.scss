@@ -40,11 +40,10 @@
     width: min((1240px + var(--padding-pc) * 2), 100%);
     padding: 0 var(--padding-pc) 0 75px;
     grid-template:
-      "title . ." 80px
-      "title . button" auto
+      "title title button" auto
       ". . ." 40px
-      ". . list" auto
-      / auto 52px 1fr;
+      ". list list" auto
+      / auto 50px 1fr;
   }
 }
 
@@ -57,7 +56,7 @@
   }
 }
 
-.p-index-news__list {
+.p-index-news__tabs {
   grid-area: list;
   background-color: rgb(255 255 255 / 0.5);
   padding: 30px 20px;
@@ -77,5 +76,74 @@
 
   @include mq(md) {
     justify-self: end;
+    align-self: flex-end;
+  }
+}
+
+// tab
+.tab {
+  display: none;
+  scroll-margin-top: 120px;
+
+  @include mq(md) {
+    scroll-margin-top: 200px;
+  }
+}
+.tab:target {
+  display: block;
+}
+.tab:last-child {
+  display: block;
+}
+.tab:target ~ section.tab:last-child {
+  display: none;
+}
+
+.tab > nav {
+  margin-top: 20px;
+
+  @include mq(md) {
+    margin-top: 30px;
+  }
+}
+
+.tab > nav > a {
+  font-size: 20px;
+  color: var(--c-primary);
+  font-style: italic;
+  font-weight: 300;
+  position: relative;
+  padding-left: 15px;
+}
+
+.tab > nav > a.active {
+  text-decoration: underline;
+}
+
+.tab > nav > a::before {
+  content: "";
+  width: 9px;
+  aspect-ratio: 9 / 11;
+  background-color: var(--c-primary);
+  clip-path: var(--clip-triangle-right);
+  position: absolute;
+  top: calc(50% + 2px);
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+/* レイアウト */
+.tab > * {
+  width: 100%;
+  padding-top: 10px;
+}
+.tab > nav {
+  padding: 0;
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+
+  @include mq(md) {
+    justify-content: flex-start;
   }
 }

@@ -63,39 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// スムーススクロール
-$(function () {
-  $('a[href*="#"]').click(function (e) {
-    const target = $(this.hash === "" ? "html" : this.hash);
-    if (target.length) {
-      e.preventDefault();
-      const position = target.offset().top - 20;
-      $("html, body").animate({ scrollTop: position }, 500, "swing");
-
-      if (!target.is("html")) {
-        history.pushState(null, "", this.hash);
-      }
-    }
-  });
-});
-
-// 別ページ遷移後のスムーススクロール
-const urlHash = location.hash;
-if (urlHash) {
-  const target = $(urlHash);
-  if (target.length) {
-    history.replaceState(null, "", window.location.pathname);
-    $("html,body").stop().scrollTop(0);
-
-    $(window).on("load", function () {
-      const position = target.offset().top - 20;
-      $("html, body").animate({ scrollTop: position }, 500, "swing");
-
-      history.replaceState(null, "", window.location.pathname + urlHash);
-    });
-  }
-}
-
 // DOMが読み込まれたらbodyにクラス追加
 document.addEventListener("DOMContentLoaded", function () {
   const body = document.querySelector("body");

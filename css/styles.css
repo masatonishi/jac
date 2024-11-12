@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --inner: 1140px;
   --inner-s: 800px;
@@ -156,6 +157,11 @@ summary,
 }
 :focus:not(:focus-visible) {
   outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -1443,7 +1449,7 @@ html[lang=en] .p-index-office__text {
   .p-index-news__inner {
     width: min(1240px + var(--padding-pc) * 2, 100%);
     padding: 0 var(--padding-pc) 0 75px;
-    grid-template: "title . ." 80px "title . button" auto ". . ." 40px ". . list" auto/auto 52px 1fr;
+    grid-template: "title title button" auto ". . ." 40px ". list list" auto/auto 50px 1fr;
   }
 }
 
@@ -1457,7 +1463,7 @@ html[lang=en] .p-index-office__text {
   }
 }
 
-.p-index-news__list {
+.p-index-news__tabs {
   grid-area: list;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 30px 20px;
@@ -1465,7 +1471,7 @@ html[lang=en] .p-index-office__text {
   row-gap: 18px;
 }
 @media screen and (min-width: 768px) {
-  .p-index-news__list {
+  .p-index-news__tabs {
     padding: 58px 60px;
     row-gap: 20px;
   }
@@ -1479,6 +1485,83 @@ html[lang=en] .p-index-office__text {
 @media screen and (min-width: 768px) {
   .p-index-news__button {
     justify-self: end;
+    align-self: flex-end;
+  }
+}
+
+.tab {
+  display: none;
+  scroll-margin-top: 120px;
+}
+@media screen and (min-width: 768px) {
+  .tab {
+    scroll-margin-top: 200px;
+  }
+}
+
+.tab:target {
+  display: block;
+}
+
+.tab:last-child {
+  display: block;
+}
+
+.tab:target ~ section.tab:last-child {
+  display: none;
+}
+
+.tab > nav {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .tab > nav {
+    margin-top: 30px;
+  }
+}
+
+.tab > nav > a {
+  font-size: 20px;
+  color: var(--c-primary);
+  font-style: italic;
+  font-weight: 300;
+  position: relative;
+  padding-left: 15px;
+}
+
+.tab > nav > a.active {
+  text-decoration: underline;
+}
+
+.tab > nav > a::before {
+  content: "";
+  width: 9px;
+  aspect-ratio: 9/11;
+  background-color: var(--c-primary);
+  -webkit-clip-path: var(--clip-triangle-right);
+          clip-path: var(--clip-triangle-right);
+  position: absolute;
+  top: calc(50% + 2px);
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+/* レイアウト */
+.tab > * {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.tab > nav {
+  padding: 0;
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .tab > nav {
+    justify-content: flex-start;
   }
 }
 
