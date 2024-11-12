@@ -9,103 +9,19 @@
   }
 }
 
-.p-index-team__container {
-  margin-top: 30px;
-
-  @include mq(md) {
-    margin-top: 75px;
-    display: grid;
-    grid-template:
-      "tabs body" auto
-      ". body" 40px
-      "button body" minmax(0, 1fr)
-      / min(320px, calc(320 / 1190 * 100vw)) minmax(0, 1fr);
-    column-gap: min(200px, calc(200 / 1190 * 100vw));
-  }
-}
-
-.p-index-team__labels {
-  padding: 0 15px;
+.p-index-team__text {
+  margin-top: 36px;
   display: grid;
-  row-gap: 8px;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 1.5em;
+  letter-spacing: 0.1em;
+  line-height: 1.75;
 
   @include mq(md) {
-    grid-area: tabs;
-    padding: 0;
+    margin: 70px auto 0;
+    width: min(940px, 100%);
+    font-size: 18px;
   }
-}
-
-.p-index-team__tab {
-  font-family: var(--second-font);
-  font-style: italic;
-  font-weight: 300;
-  font-size: 22px;
-  color: #999;
-  text-align: left;
-
-  @include mq(md) {
-    font-size: 26px;
-  }
-}
-
-.p-index-team__tab[aria-selected="true"] {
-  color: var(--c-primary);
-  position: relative;
-}
-
-.p-index-team__tab[aria-selected="true"]::before {
-  content: "";
-  width: 9px;
-  aspect-ratio: 9 / 11;
-  background-color: currentColor;
-  clip-path: var(--clip-triangle-right);
-  position: absolute;
-  top: 0.4em;
-  left: -16px;
-}
-
-.p-index-team__body {
-  margin: 45px calc(50% - 50vw) 0 0;
-  width: 100vw;
-
-  @include mq(md) {
-    grid-area: body;
-    margin: 0 calc(50% - 50vw) 0 0;
-  }
-}
-
-.p-index-team__list-wrapper {
-  position: relative;
-  overflow-x: auto;
-  white-space: nowrap;
-
-  @include mq(md) {
-    width: calc(780 / 1440 * 100vw);
-  }
-}
-
-.p-index-team__list-wrapper.is-not-scrollable {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.p-index-team__list-wrapper.is-not-scrollable::-webkit-scrollbar {
-  display: none;
-}
-
-.p-index-team__list {
-  display: flex;
-  column-gap: 38px;
-  width: max-content;
-  padding-right: 80px;
-
-  @include mq(md) {
-    padding-right: calc(50 / 1440 * 100vw);
-  }
-}
-
-.p-index-team__item {
-  width: 250px;
 }
 
 .p-index-team__button {
@@ -113,7 +29,6 @@
   width: 190px;
 
   @include mq(md) {
-    margin: 0;
-    grid-area: button;
+    margin: 40px auto 0;
   }
 }
