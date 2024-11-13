@@ -2211,6 +2211,8 @@ html[lang=en] .p-index-office__text {
 @media screen and (min-width: 768px) {
   .p-index-approach__item-title--small {
     font-size: 35px;
+    display: flex;
+    justify-content: center;
   }
 }
 

@@ -119,6 +119,8 @@
 .p-index-approach__item-title--small {
   @include mq(md) {
     font-size: 35px;
+    display: flex;
+    justify-content: center;
   }
 }
 
