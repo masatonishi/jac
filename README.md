@@ -117,3 +117,112 @@ sass のコンパイルには Visual Studio Code の拡張機能である Live S
   - l-：layout
   - u-：utility
   - js-：JavaScript で使用するクラス
+
+# 11/13 トップページ変更
+
+## CEO MESSAGE セクション
+
+### 変更内容
+
+- 見出しを 2 行に
+- 画像の横幅を大きく（PC）
+- 画像差し替え
+- 背景を画像から CSS グラデーションに変更
+
+### 変更したファイル
+
+- css/styles.css
+- img/index/pic_otsuka.jpg
+- index.html
+- sass/project/\_p-index-message.scss
+
+### 変更内容のログ
+
+- https://github.com/masatonishi/jac/commit/2a0ed8e5445790ec59faddf78774202d78e6b74b
+
+## STRATEGY セクション
+
+### 変更内容
+
+- 本文のサイズを 2px 大きく変更
+- 見出しと本文の上部位置を合わせる（PC）
+
+### 変更したファイル
+
+- css/styles.css
+- sass/project/\_p-index-strategy.scss
+
+### 変更内容のログ
+
+- https://github.com/masatonishi/jac/commit/ef57096c5f72b049ac56caf30b637d3bd99921bf#diff-9ac3a92bf672c81e7261778874bc343b2274598fcf48ac392f9461c9a0f22f4e
+
+## APPROACH セクション
+
+### 変更内容
+
+- sustainability より下を 2 列に変更
+- sustainability より下のタイトルの文字サイズを小さくし、中央に寄せる（PC）
+- 背景のあしらいを削除
+
+### 変更したファイル
+
+- css/styles.css
+- img/index/bg_approach.svg
+- index.html
+- sass/base/\_base.scss
+- sass/project/\_p-index-approach.scss
+
+### 変更内容のログ
+
+- https://github.com/masatonishi/jac/commit/106d4b39cf57de63ac4ab485c86766a957e76613#diff-5dbba773b1ca3edb41cdd06c5224b5a398751c1e7d7efa13f90d1e5daa6fd8c0
+- https://github.com/masatonishi/jac/commit/2de78fec9c2eedcadf572e7fe6a99da84d88435b
+
+## TEAM セクション
+
+### 変更内容
+
+- テキストとボタンに変更
+
+### 変更したファイル
+
+- css/styles.css
+- index.html
+- js/index.js
+- js/script.js
+- sass/component/\_c-tab.scss
+- sass/component/\_index.scss
+- sass/project/\_p-index-team.scss
+
+### 変更内容のログ
+
+- https://github.com/masatonishi/jac/commit/34f1590bb761e63ea0a4de374738d330a0642aac#diff-bc221325ccbe5194aabcacf9e00487bb05dd1d742fa5c2d88dd974b96da2d8c1
+
+## NEWS&MEDIA セクション
+
+### 変更内容
+
+- タイトルを 2 行に変更
+- 現行サイトと同じようにタブを実装
+
+### 変更したファイル
+
+- css/styles.css
+- index.html
+- js/script.js
+- sass/base/\_base.scss
+- sass/project/\_p-index-news.scss
+
+### 変更内容のログ
+
+- https://github.com/masatonishi/jac/commit/d96b228e1365975e73a74028e39def61e36ac1f7#diff-a1b561aa75b5c30882cc91e98040cc7414a1a5230d771c027663ae4a07f8fcdb
+
+## sass コンパイル時のエラーを修正
+
+### 変更したファイル
+
+- sass/global/\_variables.scss
+
+### 変更内容のログ
+
+- https://github.com/masatonishi/jac/commit/dc5bbf6ae9fb3cb08edd6cd32684ac57bec46203
+- https://github.com/masatonishi/jac/commit/26845d15aa6aae006d5adacda71fe40db9d56a23
