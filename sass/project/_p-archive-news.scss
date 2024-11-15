@@ -51,3 +51,9 @@
     margin-top: 90px;
   }
 }
+
+.p-archive-news__list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 20px;
+}

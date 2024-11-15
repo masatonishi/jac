@@ -1452,6 +1452,12 @@ html[lang=en] .p-index-office__text {
   }
 }
 
+.p-index-news__list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 20px;
+}
+
 .p-index-news__title {
   grid-area: title;
   padding-left: 15px;
@@ -2621,6 +2627,12 @@ html[lang=en] .p-sub-page-body__items {
   .p-archive-news__pagination {
     margin-top: 90px;
   }
+}
+
+.p-archive-news__list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 20px;
 }
 
 .p-entry-news__header {

@@ -47,6 +47,12 @@
   }
 }
 
+.p-index-news__list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 20px;
+}
+
 .p-index-news__title {
   grid-area: title;
   padding-left: 15px;
